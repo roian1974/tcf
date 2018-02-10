@@ -1,0 +1,24 @@
+1. 사전확인사항
+    가) 환경정보
+        1-가) C:\jDev\MyWorks\PycharmProjects\Roian\bin 하위에 tcf.env 파일이 존재하여야 된다.
+            tcf.env 파일정보
+            ----------------------------------------------------
+            db_host=192.168.199.129
+            db_user=root
+            db_password=!1974yoe0
+            db_dbname=o2
+            watson_user=f842a62b-e902-4cd4-a443-239e49976f59
+            watson_password=nDGL7hG4zQaO
+            watson_version=2017-02-27
+            --endof
+            *) 주의사항 꼭 --endof로 마지막임을 명시하여야 된다.
+2. 명령어
+    가) 형식
+        2-가) 문서에 대한 sentiment 처리
+            python tcf_sp_de001.py DED1001 test_group_1.xlsx
+            tcf_sp_de001은 공통팀에서 만드는 소스
+            DED1001은 업무팀에서 만드는 소스
+        2-나) Entity에 대한 sentiment 처리
+            python tcf_sp_de001.py DED1002 entity_group_1.xlsx
+
+

@@ -1,0 +1,183 @@
+# mysql설치
+    sudo apt-get install mysql-server
+    가이드 : http://all-record.tistory.com/183
+
+
+# mysql 외부접속 허용하기
+    • 명령어 : grant all privileges on *.* to '계정명'@'%' identified by '비밀번호';
+    • 계정명 : 외부접속을 위해 권한 변경할 계정, 여기서는 root 계정 이용
+    • 비밀번호 : 계졍의 비밀번호
+
+    grant all privileges on *.* to 'o2'@'%' identified by '!1974yoe0'
+    grant all privileges on *.* to 'root'@'%' identified by '!1974yoe0'
+
+# 네트웍환경 방화벽 허용
+    sudo ufw allow 포트번호/tcp
+    sudo ufw allow 3306/tcp
+
+# 데이타베이스 생성
+    1. 데이터베이스 생성
+
+        create database 데이터베이스 이름;
+
+        CREATE DATABASE o2 CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+    2. 데이터베이스 보기
+        show databases;
+        +--------------------+
+        | Database           |
+        +--------------------+
+        | information_schema |
+        | mysql              |
+        | o2                 |
+        | performance_schema |
+        | test               |
+        +--------------------+
+    3. 데이터베이스 선택
+        use o2;
+        Database changed
+
+    4. 생성된 테이블 확인
+        show tables;
+        +------------------+
+        | Tables_in_o2     |
+        +------------------+
+        | doc_sentiment    |
+        | target_sentiment |
+        +------------------+
+        2 rows in set (0.00 sec)
+
+# 관련 테이블 정보
+
+    CREATE TABLE doc_sentiment (
+      `no` INT(11) NOT NULL AUTO_INCREMENT,
+      `doc_id` VARCHAR(18) NOT NULL,
+      `doc_score` VARCHAR(10) NOT NULL,
+      `doc_label` VARCHAR(20) NOT NULL,
+      `model_version` VARCHAR(20) NOT NULL,
+      `use_yn` CHAR NULL,
+      `reg_date` VARCHAR(8) NULL ,
+      `reg_time` VARCHAR(6) NULL,
+      `udt_date` VARCHAR(8) NULL,
+      `udt_time` VARCHAR(6) NULL,
+       PRIMARY KEY (NO)
+    ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+    CREATE TABLE `target_sentiment` (
+      `no` INT(11) NOT NULL AUTO_INCREMENT,
+      `doc_id` VARCHAR(18) NOT NULL,
+      `target` VARCHAR(100) NOT NULL,
+      `target_type` VARCHAR(100) NOT NULL,
+      `target_score` VARCHAR(10) NOT NULL,
+      `target_label` VARCHAR(20) NOT NULL,
+      `target_sad` DECIMAL(2.6) NOT NULL,
+      `target_joy` DECIMAL(2.6) NOT NULL,
+      `target_fear` DECIMAL(2.6) NOT NULL,
+      `target_disgust` DECIMAL(2.6) NOT NULL,
+      `target_anger` DECIMAL(2.6) NOT NULL,
+      `target_subtype` VARCHAR(300),
+      `target_count` INT(11)     NOT NULL,
+      `use_yn` CHAR,
+      `reg_date` VARCHAR(8) ,
+      `reg_time` VARCHAR(6) ,
+      `udt_date` VARCHAR(8) ,
+      `udt_time` VARCHAR(6) ,
+       PRIMARY KEY (NO)
+    ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+    CREATE TABLE document (
+      `no` INT(11) NOT NULL AUTO_INCREMENT,
+      `doc_id` VARCHAR(18) NOT NULL,
+      `doc_content` TEXT NOT NULL,
+      `use_yn` CHAR NULL,
+      `reg_date` VARCHAR(8) NULL ,
+      `reg_time` VARCHAR(6) NULL,
+      `udt_date` VARCHAR(8) NULL,
+      `udt_time` VARCHAR(6) NULL,
+       PRIMARY KEY (NO)
+    ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+
+    INSERT INTO target_sentiment ( doc_id,target,target_type,target_score,target_label,target_sad,target_joy,target_fear,target_disgust,target_anger,target_subtype,use_yn,reg_date,reg_time,udt_dat,udt_time ) VALUES ( %s,%s,%s,%s,%s,%s,%s,%s,%s )
+
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0012','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0013','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0014','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0015','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0016','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0017','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0018','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0019','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+    insert into document (doc_id,doc_content,use_yn,reg_date,reg_time,udt_date,udt_time) values ('DOC0020','[아시아경제 박연미 기자] 5일 4대강 사업 입찰 담합 혐의로 1115억원을 웃도는 과징금을 물게된 건설사들은 공정거래위원회의 결정에 강력히 반발했다.   각종 담합을 주도한 인물로 지목된 전(前) A건설 전무는 담합 사실을 전면 부인하면서 "30년 건설밥을 먹었고 15년을 현장소장으로 지내며 야전에서 나라의 기틀을 닦는데 기여했는데 이제와 이런 대접을 받으니 허탈할 따름"이라고 말했다.  B건설사 관계자도 "공정위의 심사보고서는 증거도 논리도 엉성하기 짝이 없다"면서 불복 의사를 분명히 했다.  C건설도 "공정위의 징계에 4대강 사업 특성이 반영되지 않았고, 담합했다는 명시적인 증거가 부족하다"고 반발했다.','N','20180118','101010','20180118','101010');
+
+
+
+# 데이타생성
+INSERT INTO `o2`.`doc_sentiment`
+    (
+        `doc_id`,
+        `doc_score`,
+        `doc_label`,
+        `model_version`,
+        `use_yn`,
+        `reg_date`,
+        `reg_time`,
+        `udt_date`,
+        `udt_time`
+    )
+    VALUES
+    (
+        '000000000000000001',
+        '0.123456',
+        'positive',
+        '2017-12-17',
+        '20180110',
+        '101010'
+        '20180110',
+        '101010'
+    );
+INSERT INTO doc_sentiment ( doc_id,doc_score,doc_label,model_version,use_yn,reg_date,reg_time,udt_dat,udt_time ) VALUES ( %s,%s,%s,%s,%s,%s,%s,%s,%s )
+
+# 계정생성
+     -- 사용자 계정 생성
+     create user '아이디'@호스트 identified by '비밀번호';
+     
+     -- 로컬 접속계정 생성
+     create user '아이디'@localhost identified by '비밀번호';
+     
+     -- 모든 IP로 접속가능한 계정 생성
+     create user '아이디'@'%' identified by '비밀번호';
+
+     create user 'roian''@'%' identified by '!1974yoe0';
+
+
+#기타 관련 명령어
+    -- 사용자 권한 설정 
+       GRANT ALL PRIVILEGES ON 데이터베이스명.테이블명 TO '아이디'@'호스트' IDENTIFIED BY '비밀번호';
+     
+     -- 모든 데이터베이스, 모든 테이블, 모든 IP 접속 허용
+        GRANT ALL PRIVILEGES ON *.* TO '아이디'@'%' IDENTIFIED BY '비밀번호';
+     
+     -- 특정 데이터베이스, 모든 테이블  모든 IP 접속 허용
+        ex) test 라는 데이터베에스의 모든 테이블, 모든 IP 접속하도록 권한부여
+        GRANT ALL PRIVILEGES ON test.* TO '아이디'@'%' IDENTIFIED BY '비밀번호';
+     
+     -- 모든 데이터베이스, 모든 테이블, 특정 대역 IP 접속 허용
+        ex) 192.168 로 시작하는 IP에 대해 접속하도록 권한 부여
+        GRANT ALL PRIVILEGES ON *.* TO '아이디'@'192.168.%' IDENTIFIED BY '비밀번호';
+     
+     -- 모든 데이터베이스, 모든 테이블, 특정 IP만 접속 허용
+        ex) 192.168.22.33 IP에 대해 접속하도록 권한 부여
+        GRANT ALL PRIVILEGES ON *.* TO '아이디'@'192.168.22.33' IDENTIFIED BY '비밀번호';
+     
+     -- 모든 데이터베이스, 모든 테이블, 로컬에서만 
+         GRANT ALL PRIVILEGES ON *.* TO '아이디'@localhost IDENTIFIED BY '비밀번호';
+
+    -- 위의 모든사항을 반영
+        권한 적용
+        flush privileges;
+
+    -- mysql 데이타베이스 선택
+        use mysql;
+
+

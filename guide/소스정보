@@ -1,0 +1,24 @@
+
+1. 디렉토리
+    C:\jDev\MyWorks\PycharmProjects\Roian
+        <DIR>          bin
+        <DIR>          guide
+        <DIR>          log
+        <DIR>          src
+
+2. 소스정보
+    1) comdb.py : 데이타베이스 처리 프로그램
+    2) comfile.py : 파일관련 처리 프로그램
+    4) comparser.py : json 파서 처리 프로그램
+    5) comutil.py : 전체공통 유티리티 프로그램
+    6) ded1001.py : 업무팀의 업무처리 프로그램
+                    이프로그램은 엑셀파일을 읽어서 왓슨을 호출하고 처리된 결과를 파일로 저장하는 프로그램이다. sentiment 처리
+    7) etf_common.py : 엔진모듈
+    8) include.py : 엔진모듈
+    9)sp_de001.py : 업무팀의 처리프로그램
+    10) stf_common.py : 엔진모듈
+    11)tcf_sp_de001.py : 엔진모듈
+    12)tpsutil.py : 엔진모듈 : 왓슨 송수신 및 DB 송수신 관련
+
+    com1000 : 문서에서 하나의 테이블을 읽어오는 작업
+    com1001 : 엑셀파일을 읽어 왓슨을 호출하여 sentiment을 얻어오는 작업

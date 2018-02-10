@@ -1,0 +1,7 @@
+
+https://blog.naver.com/c_ist82/220777045214
+http://i5on9i.blogspot.kr/2017/08/celery.html
+
+1. 설치
+    pip install celery
+    pip install kombu

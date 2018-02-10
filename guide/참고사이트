@@ -1,0 +1,28 @@
+
+1. 우분투 설치
+    http://all-record.tistory.com/tag/ubuntu
+
+    [Ubuntu] 아파치 + 톰캣 연동된 상태에서 OpenSSL 적용
+    [Ubuntu] 우분투 서버에서 파일 업로드 시 권한문제 해결OpenSSL 설치 및 인증서 생성OpenSSL 설치 및 인증서 생성에 관한 부분은 아래 링크로 들어가  OpenSS..
+    [Ubuntu] 아파치(Apache) OpenSSL 적용
+    [Ubuntu] 아파치(Apache) 설치 및 톰캣(Tomcat8) 연동
+    [Ubuntu] 우분투 서버에서 파일 업로드 시 권한문제 해결
+    [Ubuntu] 우분투 서버(16.04)에 MySQL(5.7) 설치
+    [Ubuntu] 우분투 서버(16.04)에 톰캣 설치
+    [Ubuntu] 우분투 서버(16.04)에 자바 설치
+    [Ubuntu] Putty를 이용한 우분투 서버 SSH 접속하기
+    [Ubuntu] VM웨어에 설치된 우분투 서버 고정IP 설정하기
+    [Ubuntu] 우분투 서버 설정하기
+    [Ubuntu] VM웨어에 우분투 서버(16.04.3 LTS) 설치하기
+
+2. 우분투 이미지 백업/복구
+    http://recipes4dev.tistory.com/121
+
+    백업 : C:\Users\05288\Documents\Virtual Machines\Ubuntu 64-bit 디렉토리를 복사해 두세요
+    복구 : VMware Workstation Player의 Player - File - Open 메뉴를 선택합니다.
+           가상 머신 설정 정보 파일인 ".vmx" 파일을 선택하고 "열기" - Ubuntu 64-bit.vmxf
+
+
+
+
+

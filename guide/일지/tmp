@@ -1,0 +1,7 @@
+select * from o2.document where doc_id = '315448380191019050'
+select * from o2.document where doc_id = '315448501192495130'
+select * from o2.document where doc_id = '315448618779807835'
+select * from o2.document where doc_id = '315448901534617612'
+select * from o2.document where doc_id = '315449092312535088'
+select * from o2.document where doc_id = '315449318003838981'
+select * from o2.document where doc_id = '315449489492152338'

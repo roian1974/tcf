@@ -1,0 +1,48 @@
+{'docid': 'DOC0001',
+'response':
+    {'usage': {'text_units': 1, 'text_characters': 720, 'features': 1},
+     'language': 'ko',
+     'entities': [
+            {'type': 'Organization','text': '공정위', 'relevance': 0.953889, 'count': 3},
+            {'type': 'PrintMedia', 'text': '아시아경제', 'relevance': 0.762987, 'disambiguation': {'subtype': [], 'name': '아시아경제신문', 'dbpedia_resource': 'http://ko.dbpedia.org/resource/아시아경제신문'}, 'count': 1},
+            {'type': 'Person', 'text': '박연미 기자', 'relevance': 0.757661, 'count': 1},
+            {'type': 'Quantity', 'text': '1115억원', 'relevance': 0.73448, 'count': 1},
+            {'type': 'Organization', 'text': '공정거래위원회', 'relevance': 0.711324, 'count': 1},
+            {'type': 'Quantity', 'text': '30년', 'relevance': 0.375647, 'count': 1},
+            {'type': 'Quantity', 'text': '15년', 'relevance': 0.374507, 'count': 1},
+            {'type': 'Company', 'text': '현대건설', 'relevance': 0.364882, 'count': 1},
+            {'type': 'Company', 'text': '삼성물산', 'relevance': 0.32607, 'count': 1},
+            {'type': 'Company', 'text': 'GS건설', 'relevance': 0.312506, 'count': 1},
+            {'type': 'Company', 'text': 'SK건설', 'relevance': 0.298806, 'count': 1},
+            {'type': 'Company', 'text': '현대산업개발', 'relevance': 0.269818, 'count': 1},
+            {'type': 'Company', 'text': '대우건설', 'relevance': 0.265732, 'count': 1},
+            {'type': 'Company', 'text': '금호산업', 'relevance': 0.176476, 'count': 1},
+            {'type': 'Company', 'text': '쌍용건설', 'relevance': 0.168929, 'count': 1},
+            {'type': 'Company', 'text': '한진중공업', 'relevance': 0.148967, 'count': 1}]}},
+{'docid': 'DOC0002',
+'response':
+    {'usage': {'text_units': 1, 'text_characters': 720, 'features': 1}, 'language': 'ko',
+    'entities': [
+            {'type': 'Organization', 'text': '공정위', 'relevance': 0.953889, 'count': 3},
+            {'type': 'PrintMedia', 'text': '아시아경제', 'relevance': 0.762987, 'disambiguation': {'subtype': [], 'name': '아시아경제신문', 'dbpedia_resource': 'http://ko.dbpedia.org/resource/아시아경제신문'}, 'count': 1},
+            {'type': 'Person', 'text': '박연미 기자', 'relevance': 0.757661, 'count': 1},
+            {'type': 'Quantity', 'text': '1115억원', 'relevance': 0.73448, 'count': 1},
+            {'type': 'Organization', 'text': '공정거래위원회', 'relevance': 0.711324, 'count': 1},
+            {'type': 'Quantity', 'text': '30년', 'relevance': 0.375647, 'count': 1},
+            {'type': 'Quantity', 'text': '15년', 'relevance': 0.374507, 'count': 1},
+            {'type': 'Company', 'text': '현대건설', 'relevance': 0.364882, 'count': 1},
+            {'type': 'Company', 'text': '삼성물산', 'relevance': 0.32607, 'count': 1},
+            {'type': 'Company', 'text': 'GS건설', 'relevance': 0.312506, 'count': 1},
+            {'type': 'Company', 'text': 'SK건설', 'relevance': 0.298806, 'count': 1},
+            {'type': 'Company', 'text': '현대산업개발', 'relevance': 0.269818, 'count': 1},
+            {'type': 'Company', 'text': '대우건설', 'relevance': 0.265732, 'count': 1},
+            {'type': 'Company', 'text': '금호산업', 'relevance': 0.176476, 'count': 1},
+            {'type': 'Company', 'text': '쌍용건설', 'relevance': 0.168929, 'count': 1},
+            {'type': 'Company', 'text': '한진중공업', 'relevance': 0.148967, 'count': 1}]}}]
+
+
+
+[
+{'docid': 'DOC0001', 'response': {'usage': {'text_units': 1, 'text_characters': 720, 'features': 1}, 'language': 'ko', 'entities': [{'type': 'Organization', 'text': '공정위', 'relevance': 0.953889, 'count': 3}, {'type': 'PrintMedia', 'text': '아시아경제', 'relevance': 0.762987, 'disambiguation': {'subtype': [], 'name': '아시아경제신문', 'dbpedia_resource': 'http://ko.dbpedia.org/resource/아시아경제신문'}, 'count': 1}, {'type': 'Person', 'text': '박연미 기자', 'relevance': 0.757661, 'count': 1}, {'type': 'Quantity', 'text': '1115억원', 'relevance': 0.73448, 'count': 1}, {'type': 'Organization', 'text': '공정거래위원회', 'relevance': 0.711324, 'count': 1}, {'type': 'Quantity', 'text': '30년', 'relevance': 0.375647, 'count': 1}, {'type': 'Quantity', 'text': '15년', 'relevance': 0.374507, 'count': 1}, {'type': 'Company', 'text': '현대건설', 'relevance': 0.364882, 'count': 1}, {'type': 'Company', 'text': '삼성물산', 'relevance': 0.32607, 'count': 1}, {'type': 'Company', 'text': 'GS건설', 'relevance': 0.312506, 'count': 1}, {'type': 'Company', 'text': 'SK건설', 'relevance': 0.298806, 'count': 1}, {'type': 'Company', 'text': '현대산업개발', 'relevance': 0.269818, 'count': 1}, {'type': 'Company', 'text': '대우건설', 'relevance': 0.265732, 'count': 1}, {'type': 'Company', 'text': '금호산업', 'relevance': 0.176476, 'count': 1}, {'type': 'Company', 'text': '쌍용건설', 'relevance': 0.168929, 'count': 1}, {'type': 'Company', 'text': '한진중공업', 'relevance': 0.148967, 'count': 1}]}},
+{'docid': 'DOC0002', 'response': {'usage': {'text_units': 1, 'text_characters': 1223, 'features': 1}, 'language': 'ko', 'entities': [{'type': 'Company', 'text': '대림산업', 'relevance': 0.949553, 'count': 2}, {'type': 'Company', 'text': '삼성물산', 'relevance': 0.920435, 'count': 2}, {'type': 'Company', 'text': '현대산업개발', 'relevance': 0.746565, 'count': 2}, {'type': 'Quantity', 'text': '1115억4100만원', 'relevance': 0.555803, 'count': 1}, {'type': 'Organization', 'text': '공정거래위원회', 'relevance': 0.545655, 'count': 1}, {'type': 'Quantity', 'text': '225억4800만원', 'relevance': 0.501138, 'count': 1}, {'type': 'Quantity', 'text': '220억120만원', 'relevance': 0.486113, 'count': 1}, {'type': 'Company', 'text': 'GS건설', 'relevance': 0.482491, 'count': 1}, {'type': 'Quantity', 'text': '198억2300만원', 'relevance': 0.479074, 'count': 1}, {'type': 'Company', 'text': 'SK건설', 'relevance': 0.475218, 'count': 1}, {'type': 'Quantity', 'text': '178억5300만원', 'relevance': 0.471782, 'count': 1}, {'type': 'Company', 'text': '포스코건설', 'relevance': 0.46974, 'count': 1}, {'type': 'Quantity', 'text': '103억8400만원', 'relevance': 0.464452, 'count': 1}, {'type': 'Quantity', 'text': '96억9700만원', 'relevance': 0.4573, 'count': 1}, {'type': 'Company', 'text': '현대산업', 'relevance': 0.453601, 'count': 1}, {'type': 'Quantity', 'text': '50억4700만원', 'relevance': 0.449454, 'count': 1}, {'type': 'Quantity', 'text': '41억7700만원', 'relevance': 0.442003, 'count': 1}, {'type': 'Company', 'text': '금호산업', 'relevance': 0.436057, 'count': 1}, {'type': 'Company', 'text': '계룡건설', 'relevance': 0.43075, 'count': 1}, {'type': 'Company', 'text': '코오롱글로벌', 'relevance': 0.424532, 'count': 1}, {'type': 'Company', 'text': '경남기업', 'relevance': 0.421413, 'count': 1}, {'type': 'Company', 'text': '삼환기업', 'relevance': 0.418733, 'count': 1}, {'type': 'Company', 'text': '한진중공업', 'relevance': 0.417432, 'count': 1}, {'type': 'Company', 'text': '현대건설', 'relevance': 0.39756, 'count': 1}, {'type': 'Company', 'text': 'GS', 'relevance': 0.385063, 'count': 1}, {'type': 'Organization', 'text': '공정위', 'relevance': 0.360179, 'count': 2}, {'type': 'Company', 'text': '대우건설', 'relevance': 0.351252, 'count': 1}, {'type': 'Company', 'text': 'SK', 'relevance': 0.310597, 'count': 1}, {'type': 'Company', 'text': '두산', 'relevance': 0.296752, 'count': 2}, {'type': 'Company', 'text': '쌍용', 'relevance': 0.28599, 'disambiguation': {'subtype': [], 'name': 'GS글로벌', 'dbpedia_resource': 'http://ko.dbpedia.org/resource/GS글로벌'}, 'count': 1}, {'type': 'Company', 'text': '롯데', 'relevance': 0.267748, 'count': 2}, {'type': 'Company', 'text': '현대·대우', 'relevance': 0.243217, 'count': 1}, {'type': 'Company', 'text': '한화', 'relevance': 0.238911, 'count': 1}, {'type': 'Organization', 'text': '대림', 'relevance': 0.217533, 'count': 1}, {'type': 'Organization', 'text': '검찰', 'relevance': 0.205924, 'count': 1}, {'type': 'Organization', 'text': 'GS', 'relevance': 0.194356, 'count': 1}, {'type': 'Organization', 'text': '대우', 'relevance': 0.168601, 'disambiguation': {'subtype': [], 'name': '대우인터내셔널', 'dbpedia_resource': 'http://ko.dbpedia.org/resource/대우인터내셔널'}, 'count': 1}, {'type': 'GeographicFeature', 'text': '금강', 'relevance': 0.16236, 'count': 1}, {'type': 'GeographicFeature', 'text': '낙동강', 'relevance': 0.16085, 'count': 2}, {'type': 'Organization', 'text': 'SK', 'relevance': 0.153997, 'count': 1}, {'type': 'Organization', 'text': '삼성', 'relevance': 0.144226, 'disambiguation': {'subtype': [], 'name': '삼성그룹', 'dbpedia_resource': 'http://ko.dbpedia.org/resource/삼성그룹'}, 'count': 1}, {'type': 'Quantity', 'text': '2009년', 'relevance': 0.13526, 'count': 1}, {'type': 'Company', 'text': '현대', 'relevance': 0.130426, 'count': 1}, {'type': 'Quantity', 'text': '4월', 'relevance': 0.0931115, 'count': 1}, {'type': 'Quantity', 'text': '6월', 'relevance': 0.0907534, 'count': 1}, {'type': 'Organization', 'text': '두산', 'relevance': 0.0653992, 'count': 1}]}}
+]

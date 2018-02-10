@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>Hello.dynamic !
+	      <ul>
+	      <li>coding</li>
+	      <li>coding</li>
+	      <li>coding</li>
+	      <li>coding</li>
+	      <li>coding</li>
+	      </ul>
+	      <div> Fri May 05 2017 20:38:08 GMT+0900 (대한민국 표준시) </div>
+	</body>
+</html>

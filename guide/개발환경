@@ -1,0 +1,65 @@
+
+# 01. 개발환경
+    아나콘다
+    파이참
+    Mysql
+    왓슨
+    TOAD
+
+# 개발디렉토리 정보
+  Roian
+    - src
+        개발소스
+    - log
+        - input
+            샘파일
+        - output
+            샘파일
+    - bin
+        실행스크립터
+
+# 02. 라이버러리 설치
+    1. 왓슨
+        a. pip install --upgrade watson-developer-cloud
+    2. 데이타베이스
+        a. pip install pymysql
+    3. 사용 패키지
+        a. pip install tailer
+        b. pip install xlrd
+        c. pip install xlwt
+        d. pip install pandas
+        e. conda install scikit-learn
+
+# python path을 설정해준다.
+    set pythonpath=C:\jDev\MyWorks\PycharmProjects\Roian
+    :: from src import xxxxx
+
+# 전체 모듈구조
+    1. main control 모듈
+        TCF
+     2. 공통엔진 모듈
+        STF ETF
+     3. 유틸리티성 모듈
+        comutil
+        tpsutil
+     4. 업무비즈니스 모듈
+        SJF
+        EJF
+        SP
+        DED
+
+     -- tcp_sp_de001
+            - stf_common
+            - sp_de001
+                - sjf
+                - ded1001
+                - ded1002
+                - ded1003
+                - ejf
+            - etf_common
+     -- foundatiom
+            - comutil
+            - tpsutil
+
+
+

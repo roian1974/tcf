@@ -1,0 +1,427 @@
+||----------------------------------------------------------------------------------------------------------------------
+        서버 기반 환경 준비
+||----------------------------------------------------------------------------------------------------------------------
+    1. VM 환경구성 - 우분투 설치
+        http://all-record.tistory.com/tag/ubuntu
+
+        [Ubuntu] 아파치 + 톰캣 연동된 상태에서 OpenSSL 적용
+        [Ubuntu] 우분투 서버에서 파일 업로드 시 권한문제 해결OpenSSL 설치 및 인증서 생성OpenSSL 설치 및 인증서 생성에 관한 부분은 아래 링크로 들어가  OpenSS..
+        [Ubuntu] 아파치(Apache) OpenSSL 적용
+        [Ubuntu] 아파치(Apache) 설치 및 톰캣(Tomcat8) 연동
+        [Ubuntu] 우분투 서버에서 파일 업로드 시 권한문제 해결
+        [Ubuntu] 우분투 서버(16.04)에 MySQL(5.7) 설치
+        [Ubuntu] 우분투 서버(16.04)에 톰캣 설치
+        [Ubuntu] 우분투 서버(16.04)에 자바 설치
+        [Ubuntu] Putty를 이용한 우분투 서버 SSH 접속하기
+        [Ubuntu] VM웨어에 설치된 우분투 서버 고정IP 설정하기
+        [Ubuntu] 우분투 서버 설정하기
+        [Ubuntu] VM웨어에 우분투 서버(16.04.3 LTS) 설치하기
+
+    2. VM 이미지 우분투 이미지 백업/복구
+        http://recipes4dev.tistory.com/121
+
+        백업 : C:\Users\05288\Documents\Virtual Machines\Ubuntu 64-bit 디렉토리를 복사해 두세요
+        복구 : VMware Workstation Player의 Player - File - Open 메뉴를 선택합니다.
+               가상 머신 설정 정보 파일인 ".vmx" 파일을 선택하고 "열기" - Ubuntu 64-bit.vmxf
+
+||--------------------------------------------------------------------------------------------------------------------
+        OS 환경
+||--------------------------------------------------------------------------------------------------------------------
+    1. 유저설정
+        sudo addusr bigdata
+
+    2. sudo 권한주기
+       sudo apt-get install sudo
+
+    3. 아나콘다 설치
+        관련 사이트  :  http://redmuffler.tistory.com/445
+        bigdata@ubuntu:~$ cd /app
+        bigdata@ubuntu:/app$ mkdir temp
+        bigdata@ubuntu:/app$ cd temp
+        bigdata@ubuntu:/app/temp$ wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+        bigdata@ubuntu:/app/temp$ bash Anaconda3-5.0.1-Linux-x86_64.sh.1
+
+    3. PATH 환경 잡기
+        1) .bashrc에 다음의 패스를 추가해준다.
+            echo 'export PATH="/app/anaconda3/bin:$PATH"' >> ~/.bashrc
+            source ~./bashrc
+         2) pythonpath을 잡는다
+
+    4. 가상환경 (virtualenv 환경) 만들기
+        root@ubuntu:~$pip install virtualenv
+        bigdata@ubuntu:~$ virtualenv vcomenv
+        bigdata@ubuntu:~$ cd vcomenv
+        bigdata@ubuntu:~$ cd bin
+        bigdata@ubuntu:~$ source activate
+        (vcomenv) bigdata@ubuntu:~$
+
+    5. python path 잡기
+        export PYTHONPATH=/home/bigdata/vcomenv
+
+    6. 라이브러리 추가
+        pip install --upgrade watson-developer-cloud
+        pip install pymysql
+        pip install tailer
+        pip install xlrd
+        pip install xlwt
+        pip install pandas
+        pip install DataFrame
+        pip install tensorflow (필요시)
+        pip install googletrans (필요시)
+        pip install wheel (필요시)
+        pip install mysqlclient-1.3.12-cp36-cp36m-win_amd64.whl
+        conda install scikit-learn or pip install -U scikit-learn
+        pip install scipy
+
+        pip install params
+
+
+
+    7. 로그레벨
+        export LOGLEV=INFO
+
+    8. 실행방법
+        pyexe tcf_sp_commo.py sp_commo COM1000
+
+    9. 쥬피터 환경 설정정
+        9.1 가상환경을 실시하고 설치한다.
+            (vcomenv) bigdata@ubuntu:~/vcomenv/tool$ pip install jupyter
+        9.2 jupyter를 실행시켜 잘 설치되었는지 확인해본다.
+            $ jupyter notebook
+        9.3 config파일을 만들어준다.
+            $ jupyter notebook --generate-config
+            파일생성 위치 /home/bigdata/.jupyter/jupyter_notebook_config.py
+        9.4 환경파일 정보 조정
+            9.4.1 vi /home/bigdata/.jupyter/jupyter_notebook_config.py
+                c = get_config()
+                c.NotebookApp.ip = '192.169.199.129' # 공인ip를 적어주었다.
+                c.NotebookApp.open_browser = False # 원격접속으로 활용할 것이기 때문에 비활성화 시켰다.
+                c.NotebookApp.port = 8017 # 포트를 설정해준다. 기본포트로 8888이 자동 배정된다.
+                c.NotebookApp.notebook_dir = '/home/bigdata/vcomenv/src' # 기본 디렉터리를 지정시켜준다.
+                c.NotebookApp.base_url = 'src'
+
+            9.4.2 Password or token 생성
+
+                (vcomenv) bigdata@ubuntu:~/.jupyter$ ipython
+
+                Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+                Type 'copyright', 'credits' or 'license' for more information
+                IPython 6.2.1 -- An enhanced Interactive Python. Type '?' for help.
+
+                In [1]: from IPython.lib import passwd
+                In [2]: passwd()
+                Enter password: 1234ㅂㅈㄷㄱ
+                Verify password: 1234ㅂㅈㄷㄱ
+                Out[2]: 'sha1:36788fe2df9f:141c93103791ddea8e989e2607228edeef85994f'
+            9.4.3 패스워드 설정
+                # /home/(bigdata)/.jupyter/jupyter_notebook_config.py
+                # 아까 수정한 파일에 덧붙여 준다.
+                c.NotebookApp.password = 'sha1:36788fe2df9f:141c93103791ddea8e989e2607228edeef85994f'
+        9.5 port 열어주기
+            sudo iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
+        9.6 브라우저에서 접근하기
+            9.6.1 주피터를 실행한다
+                $ jupyter notebook
+            9.6.2 브라우저
+                http://192.168.199.129:8888/src (접근)
+
+    10 한글형태소 분리기 설치 (mecab)
+        - 가이드 사이트 : https://bitbucket.org/eunjeon/mecab-ko-dic
+        - window용 설치가이드 https://groups.google.com/forum/#!topic/eunjeon/Dzohqj4n3QI
+        - mecab-ko 설치
+        $ wget https://bitbucket.org/eunjeon/mecab-ko/downloads/mecab-0.996-ko-0.9.2.tar.gz
+        $ tar zxvf mecab-0.996-ko-0.9.2.tar.gz
+        $ cd mecab-0.996-ko-0.9.2
+        $ ./configure
+        $ make
+        $ make check
+        $ su
+        # make instal
+       - mecab-ko-dic 설치
+        $ wget https://bitbucket.org/eunjeon/mecab-ko-dic/downloads/mecab-ko-dic-2.0.3-20170922.tar.gz
+        $ tar zxfv mecab-ko-dic-2.0.3-20170922.tar.gz
+        $ cd mecab-ko-dic-2.0.3-20170922
+        $ ./configure
+        $ make
+        $ su
+        # make install
+       - 사용법
+        mecab -d /usr/local/lib/mecab/dic/mecab-ko-dic
+        (타이핑) 가자 어디로 학교로
+        가      VV,*,F,가,*,*,*,*
+        자      EC,*,F,자,*,*,*,*
+        어디    NP,*,F,어디,*,*,*,*
+        로      JKB,*,F,로,*,*,*,*
+        학교    NNG,*,F,학교,*,*,*,*
+        로      JKB,*,F,로,*,*,*,*
+
+
+    11. 텐서플로우 설치
+    (vcomenv) bigdata@ubuntu:~/vcomenv/bin$ pip install tensorflow
+    (vcomenv) bigdata@ubuntu:~/vcomenv/bin$ conda create -n tensorflow python=3.5.2
+
+    12. 기타
+        - Root 계정활성화
+          sudo passwd root
+        - 패키지 업데이트
+          sudo apt-get update
+          sudo apt-get dist-upgrade
+        - 시스템 시간설정 변경
+          sudo dpkg-reconfigure tzdata
+        - hostname 변경
+          sudo nano /etc/hostname
+        - openSSH 설치
+          sudo apt-get install openssh-server
+        - 포터 변경
+          sudo nano /etc/ssh/sshd_config
+          sudo service ssh restart
+          sudo ufw allow (변경한 SSH포트번호)/tcp
+          netstat  -ln
+
+        -
+
+
+
+||-------------------------------------------------------------------------------------------------------------------
+    DBMS 환경
+||--------------------------------------------------------------------------------------------------------------------
+
+    1. mysql설치
+        sudo apt-get install mysql-server
+        가이드 : http://all-record.tistory.com/183
+
+
+    2. mysql 외부접속 허용하기
+        • 명령어 : grant all privileges on *.* to '계정명'@'%' identified by '비밀번호';
+        • 계정명 : 외부접속을 위해 권한 변경할 계정, 여기서는 root 계정 이용
+        • 비밀번호 : 계졍의 비밀번호
+
+        grant all privileges on *.* to 'o2'@'%' identified by '!1974yoe0'
+        grant all privileges on *.* to 'root'@'%' identified by '!1974yoe0'
+
+    3. 네트웍환경 방화벽 허용
+        sudo ufw allow 포트번호/tcp
+        sudo ufw allow 3306/tcp
+
+    4. 데이타베이스 생성
+        4.1. 데이터베이스 생성
+
+            create database 데이터베이스 이름;
+
+            CREATE DATABASE o3 CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+        4.2. 데이터베이스 보기
+            show databases;
+            +--------------------+
+            | Database           |
+            +--------------------+
+            | information_schema |
+            | mysql              |
+            | o2                 |
+            | performance_schema |
+            | test               |
+            +--------------------+
+        4.3. 데이터베이스 선택
+            use o2;
+            Database changed
+
+        4.4. 생성된 테이블 확인
+            show tables;
+            +------------------+
+            | Tables_in_o2     |
+            +------------------+
+            | doc_sentiment    |
+            | target_sentiment |
+            +------------------+
+            2 rows in set (0.00 sec)
+
+        4.5 관련 테이블 정보
+
+            CREATE TABLE doc_sentiment (
+              `no` INT(11) NOT NULL AUTO_INCREMENT,
+              `doc_id` VARCHAR(18) NOT NULL,
+              `doc_score` VARCHAR(10) NOT NULL,
+              `doc_label` VARCHAR(20) NOT NULL,
+              `model_version` VARCHAR(20) NOT NULL,
+              `use_yn` CHAR NULL,
+              `reg_date` VARCHAR(8) NULL ,
+              `reg_time` VARCHAR(6) NULL,
+              `udt_date` VARCHAR(8) NULL,
+              `udt_time` VARCHAR(6) NULL,
+               PRIMARY KEY (NO)
+            ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+
+            CREATE TABLE `target_sentiment` (
+              `no` INT(11) NOT NULL AUTO_INCREMENT,
+              `doc_id` VARCHAR(18) NOT NULL,
+              `target` VARCHAR(100) NOT NULL,
+              `target_type` VARCHAR(100) NOT NULL,
+              `target_score` VARCHAR(10) NOT NULL,
+              `target_label` VARCHAR(20) NOT NULL,
+              `target_sad` DECIMAL(2.6) NOT NULL,
+              `target_joy` DECIMAL(2.6) NOT NULL,
+              `target_fear` DECIMAL(2.6) NOT NULL,
+              `target_disgust` DECIMAL(2.6) NOT NULL,
+              `target_anger` DECIMAL(2.6) NOT NULL,
+              `target_subtype` VARCHAR(300),
+              `target_count` INT(11)     NOT NULL,
+              `use_yn` CHAR,
+              `reg_date` VARCHAR(8) ,
+              `reg_time` VARCHAR(6) ,
+              `udt_date` VARCHAR(8) ,
+              `udt_time` VARCHAR(6) ,
+               PRIMARY KEY (NO)
+            ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+            CREATE TABLE document (
+              `no` INT(11) NOT NULL AUTO_INCREMENT,
+              `doc_id` VARCHAR(18) NOT NULL,
+              `doc_content` TEXT NOT NULL,
+              `use_yn` CHAR NULL,
+              `reg_date` VARCHAR(8) NULL ,
+              `reg_time` VARCHAR(6) NULL,
+              `udt_date` VARCHAR(8) NULL,
+              `udt_time` VARCHAR(6) NULL,
+               PRIMARY KEY (NO)
+            ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+            CREATE TABLE o2.document_en (
+              `no` INT(11) NOT NULL AUTO_INCREMENT,
+              `doc_id` VARCHAR(18) NOT NULL,
+              `doc_content` TEXT NOT NULL,
+              `use_yn` CHAR NULL,
+              `reg_date` VARCHAR(8) NULL ,
+              `reg_time` VARCHAR(6) NULL,
+              `udt_date` VARCHAR(8) NULL,
+              `udt_time` VARCHAR(6) NULL,
+               PRIMARY KEY (NO)
+            ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
+         -- 사용자 계정 생성
+         create user '아이디'@호스트 identified by '비밀번호';         
+         -- 로컬 접속계정 생성
+         create user '아이디'@localhost identified by '비밀번호';         
+         -- 모든 IP로 접속가능한 계정 생성
+         create user '아이디'@'%' identified by '비밀번호';
+         -- 사용자 권한 설정
+         GRANT ALL PRIVILEGES ON 데이터베이스명.테이블명 TO '아이디'@'호스트' IDENTIFIED BY '비밀번호';         
+         -- 모든 데이터베이스, 모든 테이블, 모든 IP 접속 허용
+         GRANT ALL PRIVILEGES ON *.* TO '아이디'@'%' IDENTIFIED BY '비밀번호';         
+         -- 특정 데이터베이스, 모든 테이블  모든 IP 접속 허용
+         -- ex) test 라는 데이터베에스의 모든 테이블, 모든 IP 접속하도록 권한부여
+         GRANT ALL PRIVILEGES ON test.* TO '아이디'@'%' IDENTIFIED BY '비밀번호';         
+         -- 모든 데이터베이스, 모든 테이블, 특정 대역 IP 접속 허용
+         -- ex) 192.168 로 시작하는 IP에 대해 접속하도록 권한 부여
+         GRANT ALL PRIVILEGES ON *.* TO '아이디'@'192.168.%' IDENTIFIED BY '비밀번호';         
+         -- 모든 데이터베이스, 모든 테이블, 특정 IP만 접속 허용
+         -- ex) 192.168.22.33 IP에 대해 접속하도록 권한 부여
+         GRANT ALL PRIVILEGES ON *.* TO '아이디'@'192.168.22.33' IDENTIFIED BY '비밀번호';         
+         -- 모든 데이터베이스, 모든 테이블, 로컬에서만 
+         GRANT ALL PRIVILEGES ON *.* TO '아이디'@localhost IDENTIFIED BY '비밀번호'; 
+
+||--------------------------------------------------------------------------------------------------------------------
+    형상관리 - SVN
+||--------------------------------------------------------------------------------------------------------------------
+    1. 설치가이드
+        http://www.pyrasis.com/main/Subversion-HOWTO
+    2. 배포
+       -- pip install twine
+       -- https://pypi.python.org/pypi 에서 계정생성 (roian/!1974yoe01qaz2wsx)
+       -- gitHub에 Repository을 만든다. 계정(roian1974/changwskr@gmail.com/!1974yoe0)
+          가이드 : http://emflant.tistory.com/135
+          platform 레파지포리 생성
+          https://github.com/roian1974/platform
+       -- https://git-scm.com/ 에서 git을 다운로드  (https://git-scm.com/download/win)
+       -- cmd에서  git을 실행한다.
+          cd C:\jDev\MyWorks\PycharmProjects\Roian
+          git init
+          git remote add origin https://github.com/roian1974/platform
+          git pull origin master
+          git add .
+          git commit -m "first commit"
+          git push -u origin master
+       -- setup.py 파일을 작성한다.
+            setup(name='roian-fwk',
+                  version='0.1.1',
+                  url='https://github.com/roian1974/platform',
+                  license='JWS',
+                  author='roian',
+                  author_email='changwskr@gmail.com',
+                  description='simple tcf platform',
+                  packages=['roian_fwk'],
+                  install_requires=['bs4'])
+       -- 프로젝트 디렉토리로 이동 cd C:\jDev\MyWorks\PycharmProjects\Roian
+       -- python setup.py sdist
+          python setup.py sdist --formats=gztar,zip
+       -- twine upload dist/*
+       -- https://pypi.python.org/pypi 에서 확인한다.
+
+
+
+||--------------------------------------------------------------------------------------------------------------------
+    개발툴
+||--------------------------------------------------------------------------------------------------------------------
+    WIN
+        아나콘다/파이참/MySQL Workbench
+    UNIX
+        아나콘다/주피터/MySQL Workbench/한글형태소분리기(MECAB)/텐서플로우
+
+||--------------------------------------------------------------------------------------------------------------------
+    테스트
+||--------------------------------------------------------------------------------------------------------------------
+    1. 텐서플로우
+
+
+||--------------------------------------------------------------------------------------------------------------------
+    기타정리
+||--------------------------------------------------------------------------------------------------------------------
+    파이썬의 머신러닝 라이브러리 - sklearn(scikit-learn, 사이킷런이라고 읽음)
+    아나콘다설치시 포함되는 패키지
+        - pip
+        - pandas
+        - numpy
+        - sklearn
+        - sckipy
+        - python
+    명령어
+        python -m pip install --upgrade pip
+
+
+||--------------------------------------------------------------------------------------------------------------------
+    SQL 문처리
+||--------------------------------------------------------------------------------------------------------------------
+1. 테이블 백업
+     select .. insert
+        INSERT INTO  o2.document_en SELECT * FROM o2.document WHERE use_yn='Y';
+        INSERT INTO [table] (column1, colum2, colum3) SELECT column1, colum2, colum3 FROM [table] WHERE [조건];
+
+2. document에서 처리했으나 doc_sentiment에서는 처리 안된 건 찾기
+    -- 차집합
+    select A.doc_id , B.doc_id
+    from ( select A.doc_id from o2.document A where A.use_yn='Y') A left join o2.doc_sentiment B
+    on A.doc_id = B.doc_id
+    where B.doc_id is null
+    ;
+
+3. 미처리된 건수 찾기
+    -- 전체 건수 차집합
+    select count(*)
+    from ( select A.doc_id from o2.document A) A left join o2.doc_sentiment B
+    on A.doc_id = B.doc_id
+    where B.doc_id is null ;
+
+4. 중복된 건수 찾기
+    SELECT count(DISTINCT B.doc_id) FROM (SELECT doc_id FROM o2.document WHERE doc_id IS NOT NULL) B;
+    SELECT doc_id, count(*) FROM o2.document GROUP BY doc_id HAVING count(*) >1;
+
+    SELECT count(DISTINCT B.doc_id) FROM (SELECT doc_id FROM o2.doc_sentiment WHERE doc_id IS NOT NULL) B;
+    SELECT doc_id, count(*) FROM o2.doc_sentiment GROUP BY doc_id HAVING count(*) >1;
+
+    SELECT doc_id, count(*) FROM o2.document GROUP BY doc_id HAVING count(*) >1;
+
+    SELECT count(DISTINCT B.doc_id) FROM (SELECT doc_id FROM o2.doc_sentiment WHERE doc_id IS NOT NULL) B;
+    SELECT doc_id, count(*) FROM o2.doc_sentiment GROUP BY doc_id HAVING count(*) >1;
+
+
+

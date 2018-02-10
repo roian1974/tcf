@@ -1,0 +1,9 @@
+# 왓슨 개인 userid passwd
+    {
+      "url": "https://gateway.watsonplatform.net/natural-language-understanding/api",
+      "username": "f842a62b-e902-4cd4-a443-239e49976f59",
+      "password": "nDGL7hG4zQaO"
+    }
+
+# 모듈설치
+    pip install --upgrade watson-developer-cloud
