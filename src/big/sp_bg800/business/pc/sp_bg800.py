@@ -34,6 +34,26 @@ def EJF_SP_bg800():
         else:
             return True
 
+# 실행방식
+# sp_bg002 BIG8001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv LogisR 20150101
+# sp_bg002 BIG8001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv NaiveEyes 20150101
+# python tcf_sp_commo.py sp_bg002 BIG8001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv NaiveEyes 20150101
+# python tcf_sp_commo.py sp_bg002 BIG8002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv NaiveEyes 20141231
+
+# python tcf_sp_commo.py sp_bg002 BIG8001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv RF 20150101
+# python tcf_sp_commo.py sp_bg002 BIG8002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv RF 20141231
+
+# python tcf_sp_commo.py sp_bg002 BIG8001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv SVMGusian 20150101
+# python tcf_sp_commo.py sp_bg002 BIG8002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv SVMGusian 20141231
+
+# python tcf_sp_commo.py sp_bg002 BIG8001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv SVMLinear 20150101
+# python tcf_sp_commo.py sp_bg002 BIG8002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv SVMLinear 20141231
+
+# sp_bg002 BIG8002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv LogisR 20141231
+# sp_bg002 BIG8002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv NaiveEyes 20141231
+
+# 모델 = [LogisR, NaiveEyes, RF, SVMGusian, SVMLinear]
+
 def SP_bg800():
 
     hostprog = include.getHostProg()

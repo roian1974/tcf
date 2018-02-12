@@ -14,16 +14,37 @@ from src.com.fwk.business.util.common import comutil
 def trainKNN(pbig8001cdto) :
     try:
         rtn = True
-        train_data = pbig8001cdto.dic['train_data']
+        train_data = [ pbig8001cdto.dic['train_data'] ]
         target = pbig8001cdto.dic['target']
 
+
+
+
+
+        features_drop = ['Ticket', 'Name', 'PassengerId']
+        train_data = train_data.drop(features_drop, axis=1)
+
+        cabin_mapping = {"A": 0, "B": 0.4, "C": 0.8, "D": 1.2, "E": 1.6, "F": 2, "G": 2.4, "T": 2.8}
+        for dataset in [train_data]:
+            dataset['Cabin'] = dataset['Cabin'].map(cabin_mapping)
+
+        train_data["FamilySize"] = train_data["SibSp"] + train_data["Parch"] + 1
+
+
         print( train_data.shape, target.shape)
+        print( train_data.info())
+
+        print(train_data.head(10))
+
 
         k_fold = KFold(n_splits=10, shuffle=True, random_state=0)
 
         clf = KNeighborsClassifier(n_neighbors=13)
+
         scoring = 'accuracy'
+        print("----1",scoring)
         score = cross_val_score(clf, train_data, target, cv=k_fold, n_jobs=1, scoring=scoring)
+        print('----2')
         print(score)
         score = round(np.mean(score) * 100, 2)
 

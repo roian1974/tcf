@@ -23,6 +23,34 @@ def preAnalysis(pbig8001cdto):
         pbig8001cdto.trainpd = train
         pbig8001cdto.testpd = test
 
+        #-name----------------------------------------------------------------------------------------------------------
+        train_test_data = [train, test]  # combining train and test dataset
+        for dataset in train_test_data:
+            dataset['Title'] = dataset['Name'].str.extract(' ([A-Za-z]+)\.', expand=False)
+
+        # print(train['Title'].value_counts())
+
+        title_mapping = {"Mr": 0, "Miss": 1, "Mrs": 2,
+                         "Master": 3, "Dr": 3, "Rev": 3, "Col": 3, "Major": 3, "Mlle": 3, "Countess": 3,
+                         "Ms": 3, "Lady": 3, "Jonkheer": 3, "Don": 3, "Dona": 3, "Mme": 3, "Capt": 3, "Sir": 3}
+        for dataset in train_test_data:
+            dataset['Title'] = dataset['Title'].map(title_mapping)
+
+        # print(train.head())
+        train.drop('Name', axis=1, inplace=True)
+        test.drop('Name', axis=1, inplace=True)
+        # print(train.head())
+        #-sex--------------------------------------------------------------------------------------------------------------
+        sex_mapping = {"male": 0, "female": 1}
+        for dataset in train_test_data:
+            dataset['Sex'] = dataset['Sex'].map(sex_mapping)
+
+        #-age-------------------------------------------------------------------------------------------------------------
+        # fill missing age with median age for each title (Mr, Mrs, Miss, Others)
+        train["Age"].fillna(train.groupby("Title")["Age"].transform("median"), inplace=True)
+        test["Age"].fillna(test.groupby("Title")["Age"].transform("median"), inplace=True)
+        print(train.groupby("Title")["Age"].transform("median"))
+
         pbig8001cdto.dic['train_data'] = train.drop('Survived', axis=1)
         pbig8001cdto.dic['target'] = train['Survived']
         pbig8001cdto.dic['test_data'] = test.drop("PassengerId", axis=1).copy()
@@ -44,6 +72,7 @@ def trainModel(pbig8001cdto):
     try:
         rtn = True
         modelType = pbig8001cdto.model_type
+        print(modelType)
 
         if modelType == "KNN":
             model.trainKNN(pbig8001cdto)

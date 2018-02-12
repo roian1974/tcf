@@ -33,7 +33,7 @@ def BIG8000():
 
 def BIG8000_start() :
     try:
-
+        big = include.gcominfo['sysargv'][3]
 
         pass
 

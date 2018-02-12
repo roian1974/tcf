@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/com/fwk/business/util/translate/glt.py" line="5" />
-    <bookmark url="file://$PROJECT_DIR$/src/com/fwk/business/info/tst.py" line="6" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f69826a-9a94-4ef0-8620-ba9bec903c29" name="Default" comment="">
+    <list default="true" id="6cb00b45-f8c5-4c86-80f5-ceb97268c1cd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/guide/개발환경_v0.7" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg002.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg001/xtest/2BEXXX01.txt" />
+      <change beforePath="$PROJECT_DIR$/.idea/Roian.iml" afterPath="$PROJECT_DIR$/.idea/Roian.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/env/tcf.env.unix" afterPath="$PROJECT_DIR$/env/tcf.env.unix" />
+      <change beforePath="$PROJECT_DIR$/env/tcf.env.win" afterPath="$PROJECT_DIR$/env/tcf.env.win" />
       <change beforePath="$PROJECT_DIR$/guide/리눅스 환경" afterPath="$PROJECT_DIR$/guide/리눅스 환경" />
+      <change beforePath="$PROJECT_DIR$/log/input/big/big9006cdto.json" afterPath="$PROJECT_DIR$/log/input/big/big9006cdto.json" />
+      <change beforePath="$PROJECT_DIR$/log/input/big/titanic_train.csv" afterPath="$PROJECT_DIR$/log/input/big/titanic_train.csv" />
+      <change beforePath="$PROJECT_DIR$/log/input/plt/Combined_News_DJIA.csv.out" afterPath="$PROJECT_DIR$/log/input/plt/Combined_News_DJIA.csv.out" />
       <change beforePath="$PROJECT_DIR$/log/output/sp_bg001.log.20180210" afterPath="$PROJECT_DIR$/log/output/sp_bg001.log.20180210" />
       <change beforePath="$PROJECT_DIR$/log/output/sp_bg001.out.20180210" afterPath="$PROJECT_DIR$/log/output/sp_bg001.out.20180210" />
       <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py" />
-      <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/xtest/cli_bg001.py" />
       <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py" />
       <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py" />
       <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py" />
       <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg800/business/dc/dc_bg802.py" afterPath="$PROJECT_DIR$/src/big/sp_bg800/business/dc/dc_bg802.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/model.py" afterPath="$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/model.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8000.py" afterPath="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8000.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg800/business/pc/sp_bg800.py" afterPath="$PROJECT_DIR$/src/big/sp_bg800/business/pc/sp_bg800.py" />
+      <change beforePath="$PROJECT_DIR$/src/com/fwk/business/util/common/comutil.py" afterPath="$PROJECT_DIR$/src/com/fwk/business/util/common/comutil.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,45 +39,19 @@
       <file leaf-file-name="dc_bg001.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dc_bg002.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg002.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2BEXXX01.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/2BEXXX01.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+            <state relative-caret-position="-114">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cli_bg001.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/cli_bg001.py">
+      <file leaf-file-name="개발환경_v0.7" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/guide/개발환경_v0.7">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2140">
+              <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,9 +59,31 @@
       <file leaf-file-name="리눅스 환경" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/guide/리눅스 환경">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3646">
-              <caret line="350" column="26" lean-forward="false" selection-start-line="350" selection-start-column="26" selection-end-line="350" selection-end-column="26" />
+            <state relative-caret-position="-2033">
+              <caret line="75" column="30" lean-forward="false" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="개발환경" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guide/개발환경">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cli_bg001.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/cli_bg001.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +91,7 @@
       <file leaf-file-name="sp_bg001.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/sp_bg001.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="779">
               <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding />
             </state>
@@ -96,8 +101,8 @@
       <file leaf-file-name="big1000.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-703">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="95">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -108,11 +113,9 @@
       <file leaf-file-name="big1001.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="56" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2527">
+              <caret line="138" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,11 +123,9 @@
       <file leaf-file-name="big1002.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="46" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1501">
+              <caret line="84" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,11 +133,9 @@
       <file leaf-file-name="big1003.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1748">
+              <caret line="97" column="19" lean-forward="false" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,6 +145,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="HTML File" />
         <option value="Python Script" />
       </list>
@@ -153,68 +153,68 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>9504</find>
-      <find>COM9003</find>
-      <find>commit</find>
-      <find>COM9000</find>
-      <find>COM9002</find>
-      <find>gtpbeginflag</find>
-      <find>ten</find>
-      <find>SP_bg900</find>
-      <find>inference</find>
-      <find>is_eval</find>
-      <find>=</find>
-      <find />
-      <find>=            =</find>
-      <find>data_pa</find>
-      <find>word_vecs</find>
-      <find>rt_list</find>
-      <find>ntn.</find>
-      <find>ntn6204_ntn</find>
-      <find>inputCondi</find>
-      <find>embedding_siz</find>
-      <find>regularizatio</find>
-      <find>in_tensor_keep_norma</find>
-      <find>data_path</find>
+      <find>ITF1001</find>
+      <find>ITF9</find>
+      <find>dc_bg001</find>
+      <find>SP_commo</find>
+      <find>BIG3001</find>
+      <find>BIG3003</find>
+      <find>가상환</find>
+      <find>big200</find>
+      <find>SP_bg002</find>
+      <find>BIG2</find>
+      <find>BIG20</find>
+      <find>dc_bg</find>
+      <find>big90</find>
+      <find>sp_bg801</find>
+      <find>BIG9</find>
+      <find>BIG40</find>
+      <find>dc_bg800</find>
+      <find>sp_bg004</find>
+      <find>BIG9006</find>
+      <find>relations_string</find>
+      <find>embeds_string</find>
       <find>BIG8001</find>
-      <find>8001</find>
-      <find>hostn</find>
-      <find>git</find>
-      <find>BIG1000</find>
-      <find>1001</find>
-      <find>1002</find>
+      <find>9006</find>
+      <find>bg004</find>
+      <find>import bar</find>
+      <find>BIG8002</find>
+      <find>title</find>
+      <find>Iris-versicolo</find>
+      <find>Iris-setosa</find>
+      <find>Iris-virginica</find>
     </findStrings>
     <replaceStrings>
-      <replace>MN</replace>
-      <replace>.mn.</replace>
-      <replace>print</replace>
-      <replace>@bottle</replace>
-      <replace>@bottle.</replace>
-      <replace>bottle.route</replace>
-      <replace>shedulerdao</replace>
-      <replace>COM9003</replace>
-      <replace>print('error'+</replace>
-      <replace>print('info'+</replace>
-      <replace>com</replace>
-      <replace>comlogging.logger.info(</replace>
-      <replace>self.gcominfo</replace>
-      <replace>self.gtcfenv</replace>
-      <replace>(self,</replace>
-      <replace>comlogging.logger.error(</replace>
-      <replace>(self)</replace>
-      <replace>COM8001</replace>
-      <replace>COM8000</replace>
-      <replace>SP_bg901</replace>
-      <replace>(self, ):</replace>
-      <replace>=</replace>
-      <replace>init_word_embeds</replace>
-      <replace>entity_to_wordvec</replace>
-      <replace>ntn6204_api</replace>
-      <replace>BIG1000</replace>
-      <replace>1000</replace>
-      <replace>BIG1001</replace>
-      <replace>1002</replace>
-      <replace>1003</replace>
+      <replace>900</replace>
+      <replace>ITF9001</replace>
+      <replace>ITF9002</replace>
+      <replace>BIG9003</replace>
+      <replace>BIG9</replace>
+      <replace>dc_bg900</replace>
+      <replace>SP_bg001</replace>
+      <replace>BIG3000</replace>
+      <replace>BIG3002</replace>
+      <replace>BIG3004</replace>
+      <replace>big400</replace>
+      <replace>BIG4</replace>
+      <replace>SP_bg004</replace>
+      <replace>BIG40</replace>
+      <replace>big80</replace>
+      <replace>BIG8</replace>
+      <replace>BIG80</replace>
+      <replace>dc_bg801</replace>
+      <replace>sp_bg800</replace>
+      <replace>BIG8001</replace>
+      <replace>testfile</replace>
+      <replace>model_type</replace>
+      <replace>BIG8002</replace>
+      <replace>8001</replace>
+      <replace>bg800</replace>
+      <replace>BIG8003</replace>
+      <replace>1</replace>
+      <replace>3</replace>
+      <replace>0</replace>
+      <replace>2</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -223,64 +223,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/shinhan/ntn_eval.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/shinhan/ntn_input.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9006_예측모델훈련.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/inputConditions.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/shinhan/ntn_train.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/dao/fileDAO.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/dc_bg903.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg901.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg902.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg903.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg904.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg905.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg907.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/params.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/transfer/big9001cdto.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/pc/sp_bg901.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/load_data_ready.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/transfer/big9006ddto.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204_params.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntf6204_ntn.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204_ntn.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204_input.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204_ready.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204_output.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204_api.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg906.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204.py" />
-        <option value="$PROJECT_DIR$/log/input/big/big9006cdto.json" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/pc/cli_bg901.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/tcf/action/spaction.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/pc/mod/big9006_예측모델훈련.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg002/business/dc/dc_bg002.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/pc/sp_bg002.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big2001.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big2000.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/dc/dc_bg002.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big2002.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/pc/sp_bg004.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big4000.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big4001.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/dc/dc_bg004.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big4002.py" />
         <option value="$PROJECT_DIR$/src/big/sp_bg901/transfer/big9006cdto.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/openapi/naver_openapi.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/ml/knn.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/knn.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/decisiontree.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/pc/cli_bg901.py" />
+        <option value="$PROJECT_DIR$/guide/일지/교육" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8002_이벤트후보군데이터추출.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8003_표제어추출.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8004_동사타입변환.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8005_이벤트후보군추출.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8006_예측모델훈련.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8007_모형결과적용.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8001_분석대상추출.py" />
         <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/sp_bg800.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/common/comutil.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/transfer/big1000cdto.py" />
-        <option value="$PROJECT_DIR$/jjj.py" />
-        <option value="$PROJECT_DIR$/guide/개발환경_v0.7" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg901/business/pc/mod/big9006_예측모델훈련.py" />
+        <option value="$PROJECT_DIR$/src/com/fwk/business/tcf/action/spaction.py" />
         <option value="$PROJECT_DIR$/guide/리눅스 환경" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/bar_chart.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8001.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/graph_grid.py" />
+        <option value="$PROJECT_DIR$/src/com/fwk/business/tcf/tcf_sp_bg001.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/graph.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/features.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/dc_bg802.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/dc/dc_bg801.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/transfer/big8001cdto.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8003.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/cli_bg800.py" />
+        <option value="$PROJECT_DIR$/guide/개요" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/utest/cli_bg800.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8002.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/model.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/dc/dc_bg802.py" />
+        <option value="$PROJECT_DIR$/env/tcf.env.win" />
+        <option value="$PROJECT_DIR$/env/tcf.env.unix" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8000.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/utest/iris.csv" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg001.py" />
         <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/transfer/bg1000cdto.py" />
         <option value="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/dc/2BEXXX01.txt" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg002.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg003.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg002.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="976" />
-    <option name="width" value="834" />
-    <option name="height" value="1000" />
+    <option name="x" value="17" />
+    <option name="y" value="1" />
+    <option name="width" value="1527" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -300,6 +301,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,6 +338,42 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="big" type="462c0819:PsiDirectoryNode" />
               <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Roian" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="big" type="462c0819:PsiDirectoryNode" />
+              <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="dc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Roian" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="big" type="462c0819:PsiDirectoryNode" />
+              <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="pc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Roian" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="big" type="462c0819:PsiDirectoryNode" />
+              <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="pc" type="462c0819:PsiDirectoryNode" />
+              <item name="mod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Roian" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="big" type="462c0819:PsiDirectoryNode" />
+              <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
               <item name="xtest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -354,28 +392,28 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="ded100&#9;FILE&#9;file://C:/jDev/MyWorks/PycharmProjects/Roian/src/ded1001.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/fwk/business/mn/mn_sp_de001.py" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg900" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\util\shinhan" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\web\flask\templates" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\web\flask\static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001\xtest" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001\business\tst" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg901\business\dc" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg901" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg901\utest" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg800\utest" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg800\business\dc" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\tcf" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg003\business" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001\utest" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg800" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\log\input\big" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg004" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg900\business\dc\dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -390,7 +428,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cli_bg001">
+  <component name="RunManager" selected="Python.cli_bg002">
     <configuration name="cli_bg001" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -398,103 +436,103 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/big/sp_bg001/business/pc" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/big/sp_bg001/utest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Roian" />
-      <option name="SCRIPT_NAME" value="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001\business\tst\cli_bg001.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg001.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="decisiontree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cli_bg002" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/fwk/business/util/machinelearning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/big/sp_bg001/utest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Roian" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/decisiontree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg002.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="knn (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cli_bg003" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/fwk/business/util/machinelearning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/big/sp_bg001/utest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Roian" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/knn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg003.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="knn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cli_bg800" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/fwk/business/util/ml" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/big/sp_bg800/business/pc" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Roian" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/fwk/business/util/ml/knn.py" />
+      <option name="SCRIPT_NAME" value="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg800\utest\cli_bg800.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="naver_openapi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cli_bg901" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/fwk/business/util/openapi" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/big/sp_bg901/business/pc" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Roian" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/fwk/business/util/openapi/naver_openapi.py" />
+      <option name="SCRIPT_NAME" value="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg901\utest\cli_bg901.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.naver_openapi" />
-      <item index="1" class="java.lang.String" itemvalue="Python.knn" />
-      <item index="2" class="java.lang.String" itemvalue="Python.knn (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.decisiontree" />
-      <item index="4" class="java.lang.String" itemvalue="Python.cli_bg001" />
+      <item index="0" class="java.lang.String" itemvalue="Python.cli_bg901" />
+      <item index="1" class="java.lang.String" itemvalue="Python.cli_bg800" />
+      <item index="2" class="java.lang.String" itemvalue="Python.cli_bg001" />
+      <item index="3" class="java.lang.String" itemvalue="Python.cli_bg002" />
+      <item index="4" class="java.lang.String" itemvalue="Python.cli_bg003" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.cli_bg001" />
-        <item index="1" class="java.lang.String" itemvalue="Python.decisiontree" />
-        <item index="2" class="java.lang.String" itemvalue="Python.knn (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.knn" />
-        <item index="4" class="java.lang.String" itemvalue="Python.naver_openapi" />
+        <item index="0" class="java.lang.String" itemvalue="Python.cli_bg002" />
+        <item index="1" class="java.lang.String" itemvalue="Python.cli_bg003" />
+        <item index="2" class="java.lang.String" itemvalue="Python.cli_bg001" />
+        <item index="3" class="java.lang.String" itemvalue="Python.cli_bg800" />
+        <item index="4" class="java.lang.String" itemvalue="Python.cli_bg901" />
       </list>
     </recent_temporary>
   </component>
@@ -506,11 +544,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8f69826a-9a94-4ef0-8620-ba9bec903c29" name="Default" comment="" />
-      <created>1516112642916</created>
+      <changelist id="6cb00b45-f8c5-4c86-80f5-ceb97268c1cd" name="Default" comment="" />
+      <created>1515561091058</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1516112642916</updated>
+      <updated>1515561091058</updated>
     </task>
     <servers />
   </component>
@@ -525,24 +563,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21496312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21496312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25108224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12337662" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46861473" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5064935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41233766" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33116883" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13311689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33116883" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3027027" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22054054" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22486487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29504743" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12324324" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -552,14 +601,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/com/fwk/business/util/thread/t3.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/decisiontree.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/com/sp_commo/business/dc/imsi/zwatson_tst.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -569,354 +613,283 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="166" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log/input/big/Full_Data.csv">
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/pandas/core/indexes/range.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/pandas/core/indexes/base.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/pandas/core/generic.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/pandas/core/internals.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/pandas/core/series.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/pandas/core/base.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/numpy/core/numeric.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/numpy/lib/arraysetops.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/sklearn/utils/validation.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/sklearn/base.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/abc.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/sklearn/model_selection/_split.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/sklearn/model_selection/_validation.py" />
+    <entry file="file://$PROJECT_DIR$/../DTKDB/Roian/Lib/site-packages/sklearn/metrics/scorer.py" />
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8003.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg002/business/dc/mod/logisticregression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-885">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/input/big/big9006cdto.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/pc/sp_bg901.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="95" column="28" lean-forward="true" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg002/business/pc/mod/big2003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg002/business/pc/mod/big2002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big4000.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1177">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1004.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="662">
+          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/big/sp_bg002/business/pc/sp_bg002.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="321">
+          <caret line="64" column="23" lean-forward="false" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg002/business/pc/mod/big2000.py">
+    <entry file="file://$PROJECT_DIR$/guide/개요">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="855">
+          <caret line="45" column="43" lean-forward="true" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg002/business/pc/mod/big2001.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8001.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="103" column="27" lean-forward="false" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="171">
+          <caret line="76" column="31" lean-forward="false" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/pc/mod/big9007_모형결과적용.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/dc/dc_bg801.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="630">
+          <caret line="75" column="39" lean-forward="true" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/pc/cli_bg901.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-494">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/pc/mod/big9006_예측모델훈련.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/dc/mod/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="150" column="38" lean-forward="false" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="361">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204_api.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/dc/dc_bg802.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="253" column="4" lean-forward="false" selection-start-line="253" selection-start-column="4" selection-end-line="253" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="447">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg906.py">
+    <entry file="file://$PROJECT_DIR$/env/tcf.env.win">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204.py">
+    <entry file="file://$PROJECT_DIR$/env/tcf.env.unix">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/util/ml/knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="94" column="46" lean-forward="false" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/util/openapi/naver_openapi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="118" column="109" lean-forward="false" selection-start-line="118" selection-start-column="109" selection-end-line="118" selection-end-column="109" />
-          <folding>
-            <element signature="e#370#389#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/decisiontree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-          <folding>
-            <element signature="e#121#141#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Roian/venv/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="317" column="41" lean-forward="false" selection-start-line="317" selection-start-column="41" selection-end-line="317" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/sp_bg800.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-589">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg004/business/pc/sp_bg004.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big4003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big4002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-798">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg004/business/pc/mod/big4001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg004/business/dc/dc_bg004.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg003/business/pc/sp_bg003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-744">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg002/business/dc/dc_bg002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1178">
-          <caret line="66" column="28" lean-forward="true" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/transfer/big9006cdto.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="220" column="33" lean-forward="false" selection-start-line="220" selection-start-column="33" selection-end-line="220" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="-418">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/transfer/big9003cdto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg906.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="74" lean-forward="true" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/transfer/big8001cdto.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/info/include.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/dc/dc_bg901.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3306">
+        <state relative-caret-position="-171">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/utest/cli_bg800.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/sp_bg800.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="35" column="11" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/mod/big8002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="41" column="53" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/sp_bg001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/util/common/comutil.py">
+    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/tcf/tcf_sp_bg001.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="e#350#359#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sp_commo/transfer/commoCDTO.py">
+    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/tcf/action/spaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-832">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="304">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/utest/iris.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2527">
+          <caret line="138" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sp_commo/transfer/documentDDTO.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/utest/cli_bg901.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/transfer/bg1000cdto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/utest/iris2.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/transfer/big1000cdto.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg001.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="361">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/utest/cli_bg003.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="86" column="24" lean-forward="false" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
           <folding>
-            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#0#19#0" expanded="false" />
+            <marker date="1518255268326" expanded="true" signature="1643:2130" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/cli_bg800.py">
+    <entry file="file://$PROJECT_DIR$/guide/리눅스 환경">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2033">
+          <caret line="75" column="30" lean-forward="false" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jjj.py">
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/2BEXXX01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/개발환경">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -926,103 +899,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guide/개발환경_v0.7">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
+        <state relative-caret-position="2140">
           <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guide/리눅스 환경">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3646">
-          <caret line="350" column="26" lean-forward="false" selection-start-line="350" selection-start-column="26" selection-end-line="350" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/sp_bg001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="56" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="46" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/2BEXXX01.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/cli_bg001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

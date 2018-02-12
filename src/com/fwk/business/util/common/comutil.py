@@ -12,11 +12,7 @@ import math
 import random
 import platform
 import json
-import socket
 
-
-def gethostname() :
-	return socket.gethostname()
 
 def getcwd() :
 	return os.getcwd()
