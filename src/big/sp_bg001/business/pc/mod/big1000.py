@@ -6,9 +6,6 @@ from src.com.fwk.business.util.logging import comlogging
 from src.big.sp_bg001.business.dc import dc_bg001
 
 
-# 전처리 단계
-
-
 def BIG1000():
     rtn = True
     try:

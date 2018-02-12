@@ -6,19 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f69826a-9a94-4ef0-8620-ba9bec903c29" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/dc/dao/queryDAO.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/dc/dc_bg900.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9001_분석대상추출.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9002_이벤트후보군데이터추출.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9003_표제어추출.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9004_동사타입변환.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9005_이벤트후보군추출.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9006_예측모델훈련.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9007_모형결과적용.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/business/pc/sp_bg900.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/transfer/big9001cdto.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/transfer/big9002cdto.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/big/sp_bg900/transfer/big9003cdto.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/guide/리눅스 환경" afterPath="$PROJECT_DIR$/guide/리눅스 환경" />
+      <change beforePath="$PROJECT_DIR$/log/output/sp_bg001.log.20180210" afterPath="$PROJECT_DIR$/log/output/sp_bg001.log.20180210" />
+      <change beforePath="$PROJECT_DIR$/log/output/sp_bg001.out.20180210" afterPath="$PROJECT_DIR$/log/output/sp_bg001.out.20180210" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/xtest/cli_bg001.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py" />
+      <change beforePath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py" afterPath="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,11 +27,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dc_bg001.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dc_bg002.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg002.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2BEXXX01.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/2BEXXX01.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cli_bg001.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/cli_bg001.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="리눅스 환경" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guide/리눅스 환경">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3646">
+              <caret line="350" column="26" lean-forward="false" selection-start-line="350" selection-start-column="26" selection-end-line="350" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="sp_bg001.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/sp_bg001.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="43" column="25" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+              <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -42,8 +96,8 @@
       <file leaf-file-name="big1000.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+            <state relative-caret-position="-703">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -51,89 +105,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dc_bg001.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py">
+      <file leaf-file-name="big1001.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            <state relative-caret-position="323">
+              <caret line="56" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cli_bg001.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py">
+      <file leaf-file-name="big1002.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+            <state relative-caret-position="304">
+              <caret line="46" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
-                <element signature="e#0#61#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="리눅스 환경" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/guide/리눅스 환경">
+      <file leaf-file-name="big1003.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="336" column="48" lean-forward="false" selection-start-line="336" selection-start-column="9" selection-end-line="336" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commoCDTO.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sp_commo/transfer/commoCDTO.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-832">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="documentDDTO.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sp_commo/transfer/documentDDTO.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cli_bg800.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/big/sp_bg800/business/pc/cli_bg800.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comutil.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/fwk/business/util/common/comutil.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-741">
-              <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-              <folding>
-                <element signature="e#350#359#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="big1000cdto.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/transfer/big1000cdto.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="285">
+              <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -153,10 +153,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print('error'+</find>
-      <find>IS</find>
-      <find>9512</find>
-      <find>3168</find>
       <find>9504</find>
       <find>COM9003</find>
       <find>commit</find>
@@ -183,11 +179,12 @@
       <find>BIG8001</find>
       <find>8001</find>
       <find>hostn</find>
+      <find>git</find>
+      <find>BIG1000</find>
+      <find>1001</find>
+      <find>1002</find>
     </findStrings>
     <replaceStrings>
-      <replace>.tcf_logger</replace>
-      <replace>.stf_logger</replace>
-      <replace>logger</replace>
       <replace>MN</replace>
       <replace>.mn.</replace>
       <replace>print</replace>
@@ -215,6 +212,9 @@
       <replace>ntn6204_api</replace>
       <replace>BIG1000</replace>
       <replace>1000</replace>
+      <replace>BIG1001</replace>
+      <replace>1002</replace>
+      <replace>1003</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -223,14 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg002/business/pc/mod/big2002.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg002/business/pc/mod/big2001.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg002/business/dc/dc_bg002.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg002/business/dc/mod/logisticregression.py" />
-        <option value="$PROJECT_DIR$/guide/리눅스 환경" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/shinhan/ntn.py" />
-        <option value="$PROJECT_DIR$/src/com/fwk/business/util/shinhan/params.py" />
         <option value="$PROJECT_DIR$/src/com/fwk/business/util/shinhan/ntn_eval.py" />
         <option value="$PROJECT_DIR$/src/com/fwk/business/util/shinhan/ntn_input.py" />
         <option value="$PROJECT_DIR$/src/big/sp_bg900/business/pc/mod/big9006_예측모델훈련.py" />
@@ -269,11 +261,19 @@
         <option value="$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/knn.py" />
         <option value="$PROJECT_DIR$/src/com/fwk/business/util/machinelearning/decisiontree.py" />
         <option value="$PROJECT_DIR$/src/big/sp_bg800/business/pc/sp_bg800.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py" />
         <option value="$PROJECT_DIR$/src/com/fwk/business/util/common/comutil.py" />
-        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py" />
         <option value="$PROJECT_DIR$/src/big/sp_bg001/transfer/big1000cdto.py" />
+        <option value="$PROJECT_DIR$/jjj.py" />
+        <option value="$PROJECT_DIR$/guide/개발환경_v0.7" />
+        <option value="$PROJECT_DIR$/guide/리눅스 환경" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/dc/2BEXXX01.txt" />
         <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py" />
+        <option value="$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg002.py" />
       </list>
     </option>
   </component>
@@ -315,24 +315,6 @@
             <path>
               <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
               <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Roian" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -354,64 +336,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="big" type="462c0819:PsiDirectoryNode" />
               <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="xtest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
               <item name="Roian" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="big" type="462c0819:PsiDirectoryNode" />
-              <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
+              <item name="sp_bg901" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
               <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="big" type="462c0819:PsiDirectoryNode" />
-              <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="big" type="462c0819:PsiDirectoryNode" />
-              <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="pc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="big" type="462c0819:PsiDirectoryNode" />
-              <item name="sp_bg001" type="462c0819:PsiDirectoryNode" />
-              <item name="transfer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sp_commo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Roian" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Roian" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sp_commo" type="462c0819:PsiDirectoryNode" />
-              <item name="transfer" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -426,19 +363,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg901\business\dc" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg901" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\util" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\util\scheduler" />
-      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\util\asyncqueue" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg900" />
       <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\util\shinhan" />
       <recent name="C:\jDev\MyWorks\PycharmProjects\Roian" />
       <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\web\flask\templates" />
       <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\web\flask\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001\xtest" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001\business\tst" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg901\business\dc" />
+      <recent name="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg901" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -466,7 +403,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Roian" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py" />
+      <option name="SCRIPT_NAME" value="C:\jDev\MyWorks\PycharmProjects\Roian\src\big\sp_bg001\business\tst\cli_bg001.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -588,14 +525,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21496312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21496312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21861471" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25108224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24242425" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12337662" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41233766" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33116883" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -638,55 +574,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/util/common/mythread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/etf/etf_common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg901/business/dc/mod/ntn6204_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/pprint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/tcf/action/spaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/fwk/business/tcf/tcf_sp_commo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="164" column="4" lean-forward="false" selection-start-line="164" selection-start-column="4" selection-end-line="164" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/input/big/Full_Data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -750,14 +637,6 @@
     <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1004.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1425">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -978,7 +857,7 @@
         <state relative-caret-position="456">
           <caret line="24" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -996,35 +875,7 @@
         <state relative-caret-position="-741">
           <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
-            <element signature="e#350#359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/sp_bg001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="43" column="25" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#350#359#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1048,9 +899,9 @@
     <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/transfer/big1000cdto.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1065,21 +916,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/cli_bg001.py">
+    <entry file="file://$PROJECT_DIR$/jjj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide/개발환경_v0.7">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="446" column="0" lean-forward="false" selection-start-line="446" selection-start-column="0" selection-end-line="446" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guide/리눅스 환경">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="336" column="48" lean-forward="false" selection-start-line="336" selection-start-column="9" selection-end-line="336" selection-end-column="50" />
+        <state relative-caret-position="3646">
+          <caret line="350" column="26" lean-forward="false" selection-start-line="350" selection-start-column="26" selection-end-line="350" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/sp_bg001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="56" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="46" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/2BEXXX01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/pc/mod/big1003.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/business/dc/dc_bg002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/big/sp_bg001/xtest/cli_bg001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

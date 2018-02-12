@@ -791,3 +791,428 @@
 [INFO|     include.py:       showCominfo: 87:11660] 2018-02-10 10:22:56,313 > #######################################################
 [INFO|     include.py:       showCominfo: 88:11660] 2018-02-10 10:22:56,313 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '102251', 'outtime': '102251', 'hostprog': 'BIG1000', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '5.078685'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CDA20>], 'pid': '00011660', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1000', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x000000000297BD68>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x000000000297BD68>], 'outdata': []}
 [INFO|     include.py:       showCominfo: 89:11660] 2018-02-10 10:22:56,314 > #######################################################
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 95:8236] 2018-02-10 14:37:51,510 > ============================================= TCF_SP_bg001() s
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 96:8236] 2018-02-10 14:37:51,514 > DB connect 호출(dbconnect)
+[INFO|   comdbutil.py:            dbinit: 56:8236] 2018-02-10 14:37:51,562 > dbinit성공
+[INFO|tcf_sp_bg001.py:         tpsvrinit:109:8236] 2018-02-10 14:37:51,564 > dbconnect() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:123:8236] 2018-02-10 14:37:51,565 > tpsinit() call success
+[INFO|    sp_bg001.py:      SJF_SP_bg001:  8:8236] 2018-02-10 14:37:56,360 > SJF_SP_bg001 xxxxxxxx
+[INFO|    sp_bg001.py:      SJF_SP_bg001: 15:8236] 2018-02-10 14:37:56,360 > SJF_SP_bg001-성공
+[INFO|   sjfaction.py:            action: 38:8236] 2018-02-10 14:37:56,360 > SJF_SP_bg001() call success
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:37:56,360 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:37:56,360 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '', 'intime': '', 'outtime': '', 'hostprog': 'BIG1001', 'logfile': '', 'interval': ''}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CAB70>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:37:56,360 > #######################################################
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 25:8236] 2018-02-10 14:37:56,361 > TCF_SP_bg001 모듈시작
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 28:8236] 2018-02-10 14:37:56,361 > =================== STF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 29:8236] 2018-02-10 14:37:56,361 > STF() start 
+[INFO|  stf_common.py:               STF: 21:8236] 2018-02-10 14:37:56,361 > set sysdate
+[INFO|  stf_common.py:               STF: 24:8236] 2018-02-10 14:37:56,361 > set sysintime
+[INFO|  stf_common.py:               STF: 28:8236] 2018-02-10 14:37:56,361 > set os type
+[INFO|  stf_common.py:               STF: 31:8236] 2018-02-10 14:37:56,361 > set start int time
+[INFO|  stf_common.py:               STF: 35:8236] 2018-02-10 14:37:56,361 > set indata-4
+[INFO|  stf_common.py:               STF: 44:8236] 2018-02-10 14:37:56,361 > 서비스로그파일을 정한다.
+[INFO|  stf_common.py:               STF: 54:8236] 2018-02-10 14:37:56,361 > set interval 0
+[INFO|  stf_common.py:               STF: 57:8236] 2018-02-10 14:37:56,361 > set logfile-C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210
+[INFO|     tpsutil.py:             tpenv:355:8236] 2018-02-10 14:37:56,370 > ▲tpenv()-성공:
+[INFO|   comdbutil.py:        ibatisload:111:8236] 2018-02-10 14:37:56,372 > ▲ibatisload()-성공:
+[INFO|     tpsutil.py:           tpbegin:270:8236] 2018-02-10 14:37:56,372 > ▲tpbegin()-성공:True
+[INFO|  stf_common.py:               STF: 70:8236] 2018-02-10 14:37:56,372 > STF함수 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 31:8236] 2018-02-10 14:37:56,372 > STF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 34:8236] 2018-02-10 14:37:56,372 > STF() 함수호출성공 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 35:8236] 2018-02-10 14:37:56,372 > ===================AP [sp_bg001] main start 
+[INFO|     big1001.py:           BIG1001: 12:8236] 2018-02-10 14:37:56,372 > BIG1001_start() start 
+[INFO|     big1001.py:     BIG1001_start: 39:8236] 2018-02-10 14:37:56,372 > BIG1001_start-성공
+[INFO|     big1001.py:           BIG1001: 14:8236] 2018-02-10 14:37:56,372 > BIG1001_processing() start 
+[INFO|     big1001.py:BIG1001_processing: 48:8236] 2018-02-10 14:37:56,372 > #################################################################1518241076.0
+[INFO|     big1001.py:BIG1001_processing: 50:8236] 2018-02-10 14:38:05,919 > #################################################################1518241085.0
+[INFO|     big1001.py:BIG1001_processing: 55:8236] 2018-02-10 14:38:05,919 > BIG1001_processing-성공
+[INFO|     big1001.py:           BIG1001: 22:8236] 2018-02-10 14:38:05,919 > BIG1001-성공
+[INFO|     big1001.py:       BIG1001_end: 69:8236] 2018-02-10 14:38:05,920 > BIG1001_end-성공
+[INFO|    sp_bg001.py:          SP_bg001: 62:8236] 2018-02-10 14:38:05,920 > SP_bg001-성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 39:8236] 2018-02-10 14:38:05,920 > ===================AP [sp_bg001] main end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 42:8236] 2018-02-10 14:38:05,920 > AP[sp_bg001] 함수호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 52:8236] 2018-02-10 14:38:05,920 > SUS:F[TCF_SP_bg001]함수 호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 54:8236] 2018-02-10 14:38:05,921 > =================== ETF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 55:8236] 2018-02-10 14:38:05,921 > ETF() start 
+[INFO|  etf_common.py:               ETF: 15:8236] 2018-02-10 14:38:05,921 > 트랜잭션을 완료시킨다.
+[INFO|     tpsutil.py:          tpcommit:308:8236] 2018-02-10 14:38:05,938 > ▲tpcommit()-성공:
+[INFO|  etf_common.py:               ETF: 21:8236] 2018-02-10 14:38:05,938 > 프로세스 종료시간을 설정한다
+[INFO|  etf_common.py:               ETF: 24:8236] 2018-02-10 14:38:05,939 > 인터벌은 9.577794
+[INFO|  etf_common.py:               ETF: 26:8236] 2018-02-10 14:38:05,939 > 로그를 저장합니다
+[INFO|  etf_common.py:       ETF_logging: 43:8236] 2018-02-10 14:38:05,939 > filename==C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210----{'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143756', 'outtime': '143756', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '9.577794'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CAB70>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|  etf_common.py:               ETF: 33:8236] 2018-02-10 14:38:05,952 > ETF 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 57:8236] 2018-02-10 14:38:05,952 > ETF() end 
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:38:05,952 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:38:05,952 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143756', 'outtime': '143756', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '9.577794'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CAB70>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:38:05,952 > #######################################################
+[INFO|    sp_bg001.py:      EJF_SP_bg001: 31:8236] 2018-02-10 14:38:05,953 > EJF_SP_bg001-성공
+[INFO|   ejfaction.py:            action: 39:8236] 2018-02-10 14:38:05,953 > EJF_SP_bg001() call success
+[INFO|   comdbutil.py:           dbclose: 93:8236] 2018-02-10 14:38:05,953 > db close
+[INFO|tcf_sp_bg001.py:              main:168:8236] 2018-02-10 14:38:05,953 > ============================================= TCF_SP_bg001() e
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:38:05,954 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:38:05,954 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143756', 'outtime': '143756', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '9.577794'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CAB70>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:38:05,954 > #######################################################
+[INFO|     tpsutil.py:             tpenv:355:8236] 2018-02-10 14:38:05,955 > ▲tpenv()-성공:
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 95:8236] 2018-02-10 14:38:05,968 > ============================================= TCF_SP_bg001() s
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 95:8236] 2018-02-10 14:38:05,968 > ============================================= TCF_SP_bg001() s
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 96:8236] 2018-02-10 14:38:05,969 > DB connect 호출(dbconnect)
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 96:8236] 2018-02-10 14:38:05,969 > DB connect 호출(dbconnect)
+[INFO|   comdbutil.py:            dbinit: 56:8236] 2018-02-10 14:38:06,002 > dbinit성공
+[INFO|   comdbutil.py:            dbinit: 56:8236] 2018-02-10 14:38:06,002 > dbinit성공
+[INFO|tcf_sp_bg001.py:         tpsvrinit:109:8236] 2018-02-10 14:38:06,003 > dbconnect() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:109:8236] 2018-02-10 14:38:06,003 > dbconnect() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:123:8236] 2018-02-10 14:38:06,003 > tpsinit() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:123:8236] 2018-02-10 14:38:06,003 > tpsinit() call success
+[INFO|    sp_bg001.py:      SJF_SP_bg001:  8:8236] 2018-02-10 14:38:06,003 > SJF_SP_bg001 xxxxxxxx
+[INFO|    sp_bg001.py:      SJF_SP_bg001:  8:8236] 2018-02-10 14:38:06,003 > SJF_SP_bg001 xxxxxxxx
+[INFO|    sp_bg001.py:      SJF_SP_bg001: 15:8236] 2018-02-10 14:38:06,003 > SJF_SP_bg001-성공
+[INFO|    sp_bg001.py:      SJF_SP_bg001: 15:8236] 2018-02-10 14:38:06,003 > SJF_SP_bg001-성공
+[INFO|   sjfaction.py:            action: 38:8236] 2018-02-10 14:38:06,003 > SJF_SP_bg001() call success
+[INFO|   sjfaction.py:            action: 38:8236] 2018-02-10 14:38:06,003 > SJF_SP_bg001() call success
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:38:06,003 > #######################################################
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:38:06,003 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:38:06,003 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '', 'intime': '', 'outtime': '', 'hostprog': 'BIG1001', 'logfile': '', 'interval': ''}, 'dbconn': [<pymysql.connections.Connection object at 0x0000000014714828>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [], 'outdata': []}
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:38:06,003 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '', 'intime': '', 'outtime': '', 'hostprog': 'BIG1001', 'logfile': '', 'interval': ''}, 'dbconn': [<pymysql.connections.Connection object at 0x0000000014714828>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:38:06,004 > #######################################################
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:38:06,004 > #######################################################
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 25:8236] 2018-02-10 14:38:06,004 > TCF_SP_bg001 모듈시작
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 25:8236] 2018-02-10 14:38:06,004 > TCF_SP_bg001 모듈시작
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 28:8236] 2018-02-10 14:38:06,004 > =================== STF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 28:8236] 2018-02-10 14:38:06,004 > =================== STF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 29:8236] 2018-02-10 14:38:06,004 > STF() start 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 29:8236] 2018-02-10 14:38:06,004 > STF() start 
+[INFO|  stf_common.py:               STF: 21:8236] 2018-02-10 14:38:06,004 > set sysdate
+[INFO|  stf_common.py:               STF: 21:8236] 2018-02-10 14:38:06,004 > set sysdate
+[INFO|  stf_common.py:               STF: 24:8236] 2018-02-10 14:38:06,005 > set sysintime
+[INFO|  stf_common.py:               STF: 24:8236] 2018-02-10 14:38:06,005 > set sysintime
+[INFO|  stf_common.py:               STF: 28:8236] 2018-02-10 14:38:06,007 > set os type
+[INFO|  stf_common.py:               STF: 28:8236] 2018-02-10 14:38:06,007 > set os type
+[INFO|  stf_common.py:               STF: 31:8236] 2018-02-10 14:38:06,008 > set start int time
+[INFO|  stf_common.py:               STF: 31:8236] 2018-02-10 14:38:06,008 > set start int time
+[INFO|  stf_common.py:               STF: 35:8236] 2018-02-10 14:38:06,010 > set indata-4
+[INFO|  stf_common.py:               STF: 35:8236] 2018-02-10 14:38:06,010 > set indata-4
+[INFO|  stf_common.py:               STF: 44:8236] 2018-02-10 14:38:06,012 > 서비스로그파일을 정한다.
+[INFO|  stf_common.py:               STF: 44:8236] 2018-02-10 14:38:06,012 > 서비스로그파일을 정한다.
+[INFO|  stf_common.py:               STF: 54:8236] 2018-02-10 14:38:06,012 > set interval 0
+[INFO|  stf_common.py:               STF: 54:8236] 2018-02-10 14:38:06,012 > set interval 0
+[INFO|  stf_common.py:               STF: 57:8236] 2018-02-10 14:38:06,012 > set logfile-C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210
+[INFO|  stf_common.py:               STF: 57:8236] 2018-02-10 14:38:06,012 > set logfile-C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210
+[INFO|     tpsutil.py:             tpenv:355:8236] 2018-02-10 14:38:06,021 > ▲tpenv()-성공:
+[INFO|     tpsutil.py:             tpenv:355:8236] 2018-02-10 14:38:06,021 > ▲tpenv()-성공:
+[INFO|   comdbutil.py:        ibatisload:111:8236] 2018-02-10 14:38:06,022 > ▲ibatisload()-성공:
+[INFO|   comdbutil.py:        ibatisload:111:8236] 2018-02-10 14:38:06,022 > ▲ibatisload()-성공:
+[INFO|     tpsutil.py:           tpbegin:270:8236] 2018-02-10 14:38:06,023 > ▲tpbegin()-성공:True
+[INFO|     tpsutil.py:           tpbegin:270:8236] 2018-02-10 14:38:06,023 > ▲tpbegin()-성공:True
+[INFO|  stf_common.py:               STF: 70:8236] 2018-02-10 14:38:06,023 > STF함수 성공
+[INFO|  stf_common.py:               STF: 70:8236] 2018-02-10 14:38:06,023 > STF함수 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 31:8236] 2018-02-10 14:38:06,023 > STF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 31:8236] 2018-02-10 14:38:06,023 > STF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 34:8236] 2018-02-10 14:38:06,023 > STF() 함수호출성공 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 34:8236] 2018-02-10 14:38:06,023 > STF() 함수호출성공 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 35:8236] 2018-02-10 14:38:06,023 > ===================AP [sp_bg001] main start 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 35:8236] 2018-02-10 14:38:06,023 > ===================AP [sp_bg001] main start 
+[INFO|     big1001.py:           BIG1001: 12:8236] 2018-02-10 14:38:06,023 > BIG1001_start() start 
+[INFO|     big1001.py:           BIG1001: 12:8236] 2018-02-10 14:38:06,023 > BIG1001_start() start 
+[INFO|     big1001.py:     BIG1001_start: 39:8236] 2018-02-10 14:38:06,023 > BIG1001_start-성공
+[INFO|     big1001.py:     BIG1001_start: 39:8236] 2018-02-10 14:38:06,023 > BIG1001_start-성공
+[INFO|     big1001.py:           BIG1001: 14:8236] 2018-02-10 14:38:06,023 > BIG1001_processing() start 
+[INFO|     big1001.py:           BIG1001: 14:8236] 2018-02-10 14:38:06,023 > BIG1001_processing() start 
+[INFO|     big1001.py:BIG1001_processing: 48:8236] 2018-02-10 14:38:06,024 > #################################################################1518241086.0
+[INFO|     big1001.py:BIG1001_processing: 48:8236] 2018-02-10 14:38:06,024 > #################################################################1518241086.0
+[INFO|     big1001.py:BIG1001_processing: 50:8236] 2018-02-10 14:38:11,555 > #################################################################1518241091.0
+[INFO|     big1001.py:BIG1001_processing: 50:8236] 2018-02-10 14:38:11,555 > #################################################################1518241091.0
+[INFO|     big1001.py:BIG1001_processing: 55:8236] 2018-02-10 14:38:11,555 > BIG1001_processing-성공
+[INFO|     big1001.py:BIG1001_processing: 55:8236] 2018-02-10 14:38:11,555 > BIG1001_processing-성공
+[INFO|     big1001.py:           BIG1001: 22:8236] 2018-02-10 14:38:11,555 > BIG1001-성공
+[INFO|     big1001.py:           BIG1001: 22:8236] 2018-02-10 14:38:11,555 > BIG1001-성공
+[INFO|     big1001.py:       BIG1001_end: 69:8236] 2018-02-10 14:38:11,556 > BIG1001_end-성공
+[INFO|     big1001.py:       BIG1001_end: 69:8236] 2018-02-10 14:38:11,556 > BIG1001_end-성공
+[INFO|    sp_bg001.py:          SP_bg001: 62:8236] 2018-02-10 14:38:11,556 > SP_bg001-성공
+[INFO|    sp_bg001.py:          SP_bg001: 62:8236] 2018-02-10 14:38:11,556 > SP_bg001-성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 39:8236] 2018-02-10 14:38:11,556 > ===================AP [sp_bg001] main end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 39:8236] 2018-02-10 14:38:11,556 > ===================AP [sp_bg001] main end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 42:8236] 2018-02-10 14:38:11,556 > AP[sp_bg001] 함수호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 42:8236] 2018-02-10 14:38:11,556 > AP[sp_bg001] 함수호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 52:8236] 2018-02-10 14:38:11,556 > SUS:F[TCF_SP_bg001]함수 호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 52:8236] 2018-02-10 14:38:11,556 > SUS:F[TCF_SP_bg001]함수 호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 54:8236] 2018-02-10 14:38:11,557 > =================== ETF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 54:8236] 2018-02-10 14:38:11,557 > =================== ETF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 55:8236] 2018-02-10 14:38:11,557 > ETF() start 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 55:8236] 2018-02-10 14:38:11,557 > ETF() start 
+[INFO|  etf_common.py:               ETF: 15:8236] 2018-02-10 14:38:11,557 > 트랜잭션을 완료시킨다.
+[INFO|  etf_common.py:               ETF: 15:8236] 2018-02-10 14:38:11,557 > 트랜잭션을 완료시킨다.
+[INFO|     tpsutil.py:          tpcommit:308:8236] 2018-02-10 14:38:11,600 > ▲tpcommit()-성공:
+[INFO|     tpsutil.py:          tpcommit:308:8236] 2018-02-10 14:38:11,600 > ▲tpcommit()-성공:
+[INFO|  etf_common.py:               ETF: 21:8236] 2018-02-10 14:38:11,602 > 프로세스 종료시간을 설정한다
+[INFO|  etf_common.py:               ETF: 21:8236] 2018-02-10 14:38:11,602 > 프로세스 종료시간을 설정한다
+[INFO|  etf_common.py:               ETF: 24:8236] 2018-02-10 14:38:11,604 > 인터벌은 5.592568
+[INFO|  etf_common.py:               ETF: 24:8236] 2018-02-10 14:38:11,604 > 인터벌은 5.592568
+[INFO|  etf_common.py:               ETF: 26:8236] 2018-02-10 14:38:11,604 > 로그를 저장합니다
+[INFO|  etf_common.py:               ETF: 26:8236] 2018-02-10 14:38:11,604 > 로그를 저장합니다
+[INFO|  etf_common.py:       ETF_logging: 43:8236] 2018-02-10 14:38:11,605 > filename==C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210----{'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143806', 'outtime': '143806', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '5.592568'}, 'dbconn': [<pymysql.connections.Connection object at 0x0000000014714828>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|  etf_common.py:       ETF_logging: 43:8236] 2018-02-10 14:38:11,605 > filename==C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210----{'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143806', 'outtime': '143806', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '5.592568'}, 'dbconn': [<pymysql.connections.Connection object at 0x0000000014714828>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|  etf_common.py:               ETF: 33:8236] 2018-02-10 14:38:11,635 > ETF 성공
+[INFO|  etf_common.py:               ETF: 33:8236] 2018-02-10 14:38:11,635 > ETF 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 57:8236] 2018-02-10 14:38:11,637 > ETF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 57:8236] 2018-02-10 14:38:11,637 > ETF() end 
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:38:11,637 > #######################################################
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:38:11,637 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:38:11,638 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143806', 'outtime': '143806', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '5.592568'}, 'dbconn': [<pymysql.connections.Connection object at 0x0000000014714828>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:38:11,638 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143806', 'outtime': '143806', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '5.592568'}, 'dbconn': [<pymysql.connections.Connection object at 0x0000000014714828>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:38:11,638 > #######################################################
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:38:11,638 > #######################################################
+[INFO|    sp_bg001.py:      EJF_SP_bg001: 31:8236] 2018-02-10 14:38:11,639 > EJF_SP_bg001-성공
+[INFO|    sp_bg001.py:      EJF_SP_bg001: 31:8236] 2018-02-10 14:38:11,639 > EJF_SP_bg001-성공
+[INFO|   ejfaction.py:            action: 39:8236] 2018-02-10 14:38:11,640 > EJF_SP_bg001() call success
+[INFO|   ejfaction.py:            action: 39:8236] 2018-02-10 14:38:11,640 > EJF_SP_bg001() call success
+[INFO|   comdbutil.py:           dbclose: 93:8236] 2018-02-10 14:38:11,641 > db close
+[INFO|   comdbutil.py:           dbclose: 93:8236] 2018-02-10 14:38:11,641 > db close
+[INFO|tcf_sp_bg001.py:              main:168:8236] 2018-02-10 14:38:11,641 > ============================================= TCF_SP_bg001() e
+[INFO|tcf_sp_bg001.py:              main:168:8236] 2018-02-10 14:38:11,641 > ============================================= TCF_SP_bg001() e
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:38:11,641 > #######################################################
+[INFO|     include.py:       showCominfo: 87:8236] 2018-02-10 14:38:11,641 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:38:11,642 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143806', 'outtime': '143806', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '5.592568'}, 'dbconn': [<pymysql.connections.Connection object at 0x0000000014714828>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 88:8236] 2018-02-10 14:38:11,642 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143806', 'outtime': '143806', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '5.592568'}, 'dbconn': [<pymysql.connections.Connection object at 0x0000000014714828>], 'pid': '00008236', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:38:11,642 > #######################################################
+[INFO|     include.py:       showCominfo: 89:8236] 2018-02-10 14:38:11,642 > #######################################################
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 95:10584] 2018-02-10 14:38:31,549 > ============================================= TCF_SP_bg001() s
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 96:10584] 2018-02-10 14:38:31,549 > DB connect 호출(dbconnect)
+[INFO|   comdbutil.py:            dbinit: 56:10584] 2018-02-10 14:38:31,593 > dbinit성공
+[INFO|tcf_sp_bg001.py:         tpsvrinit:109:10584] 2018-02-10 14:38:31,593 > dbconnect() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:123:10584] 2018-02-10 14:38:31,594 > tpsinit() call success
+[INFO|    sp_bg001.py:      SJF_SP_bg001:  8:10584] 2018-02-10 14:38:33,875 > SJF_SP_bg001 xxxxxxxx
+[INFO|    sp_bg001.py:      SJF_SP_bg001: 15:10584] 2018-02-10 14:38:33,876 > SJF_SP_bg001-성공
+[INFO|   sjfaction.py:            action: 38:10584] 2018-02-10 14:38:33,876 > SJF_SP_bg001() call success
+[INFO|     include.py:       showCominfo: 87:10584] 2018-02-10 14:38:33,876 > #######################################################
+[INFO|     include.py:       showCominfo: 88:10584] 2018-02-10 14:38:33,876 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '', 'intime': '', 'outtime': '', 'hostprog': 'BIG1001', 'logfile': '', 'interval': ''}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CBB70>], 'pid': '00010584', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:10584] 2018-02-10 14:38:33,877 > #######################################################
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 25:10584] 2018-02-10 14:38:33,877 > TCF_SP_bg001 모듈시작
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 28:10584] 2018-02-10 14:38:33,877 > =================== STF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 29:10584] 2018-02-10 14:38:33,877 > STF() start 
+[INFO|  stf_common.py:               STF: 21:10584] 2018-02-10 14:38:33,877 > set sysdate
+[INFO|  stf_common.py:               STF: 24:10584] 2018-02-10 14:38:33,877 > set sysintime
+[INFO|  stf_common.py:               STF: 28:10584] 2018-02-10 14:38:33,877 > set os type
+[INFO|  stf_common.py:               STF: 31:10584] 2018-02-10 14:38:33,878 > set start int time
+[INFO|  stf_common.py:               STF: 35:10584] 2018-02-10 14:38:33,878 > set indata-4
+[INFO|  stf_common.py:               STF: 44:10584] 2018-02-10 14:38:33,878 > 서비스로그파일을 정한다.
+[INFO|  stf_common.py:               STF: 54:10584] 2018-02-10 14:38:33,878 > set interval 0
+[INFO|  stf_common.py:               STF: 57:10584] 2018-02-10 14:38:33,878 > set logfile-C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210
+[INFO|     tpsutil.py:             tpenv:355:10584] 2018-02-10 14:38:33,891 > ▲tpenv()-성공:
+[INFO|   comdbutil.py:        ibatisload:111:10584] 2018-02-10 14:38:33,891 > ▲ibatisload()-성공:
+[INFO|     tpsutil.py:           tpbegin:270:10584] 2018-02-10 14:38:33,892 > ▲tpbegin()-성공:True
+[INFO|  stf_common.py:               STF: 70:10584] 2018-02-10 14:38:33,892 > STF함수 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 31:10584] 2018-02-10 14:38:33,892 > STF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 34:10584] 2018-02-10 14:38:33,892 > STF() 함수호출성공 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 35:10584] 2018-02-10 14:38:33,892 > ===================AP [sp_bg001] main start 
+[INFO|     big1001.py:           BIG1001: 12:10584] 2018-02-10 14:38:33,892 > BIG1001_start() start 
+[INFO|     big1001.py:     BIG1001_start: 39:10584] 2018-02-10 14:38:33,892 > BIG1001_start-성공
+[INFO|     big1001.py:           BIG1001: 14:10584] 2018-02-10 14:38:33,893 > BIG1001_processing() start 
+[INFO|     big1001.py:BIG1001_processing: 48:10584] 2018-02-10 14:38:33,893 > #################################################################1518241113.0
+[INFO|     big1001.py:BIG1001_processing: 50:10584] 2018-02-10 14:38:41,627 > #################################################################1518241121.0
+[INFO|     big1001.py:BIG1001_processing: 55:10584] 2018-02-10 14:38:41,627 > BIG1001_processing-성공
+[INFO|     big1001.py:           BIG1001: 22:10584] 2018-02-10 14:38:41,627 > BIG1001-성공
+[INFO|     big1001.py:       BIG1001_end: 69:10584] 2018-02-10 14:38:41,628 > BIG1001_end-성공
+[INFO|    sp_bg001.py:          SP_bg001: 62:10584] 2018-02-10 14:38:41,628 > SP_bg001-성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 39:10584] 2018-02-10 14:38:41,628 > ===================AP [sp_bg001] main end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 42:10584] 2018-02-10 14:38:41,628 > AP[sp_bg001] 함수호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 52:10584] 2018-02-10 14:38:41,628 > SUS:F[TCF_SP_bg001]함수 호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 54:10584] 2018-02-10 14:38:41,628 > =================== ETF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 55:10584] 2018-02-10 14:38:41,628 > ETF() start 
+[INFO|  etf_common.py:               ETF: 15:10584] 2018-02-10 14:38:41,628 > 트랜잭션을 완료시킨다.
+[INFO|     tpsutil.py:          tpcommit:308:10584] 2018-02-10 14:38:41,639 > ▲tpcommit()-성공:
+[INFO|  etf_common.py:               ETF: 21:10584] 2018-02-10 14:38:41,639 > 프로세스 종료시간을 설정한다
+[INFO|  etf_common.py:               ETF: 24:10584] 2018-02-10 14:38:41,639 > 인터벌은 7.761868
+[INFO|  etf_common.py:               ETF: 26:10584] 2018-02-10 14:38:41,639 > 로그를 저장합니다
+[INFO|  etf_common.py:       ETF_logging: 43:10584] 2018-02-10 14:38:41,640 > filename==C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210----{'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143833', 'outtime': '143833', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '7.761868'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CBB70>], 'pid': '00010584', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|  etf_common.py:               ETF: 33:10584] 2018-02-10 14:38:41,720 > ETF 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 57:10584] 2018-02-10 14:38:41,720 > ETF() end 
+[INFO|     include.py:       showCominfo: 87:10584] 2018-02-10 14:38:41,720 > #######################################################
+[INFO|     include.py:       showCominfo: 88:10584] 2018-02-10 14:38:41,721 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143833', 'outtime': '143833', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '7.761868'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CBB70>], 'pid': '00010584', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:10584] 2018-02-10 14:38:41,721 > #######################################################
+[INFO|    sp_bg001.py:      EJF_SP_bg001: 31:10584] 2018-02-10 14:38:41,721 > EJF_SP_bg001-성공
+[INFO|   ejfaction.py:            action: 39:10584] 2018-02-10 14:38:41,721 > EJF_SP_bg001() call success
+[INFO|   comdbutil.py:           dbclose: 93:10584] 2018-02-10 14:38:41,721 > db close
+[INFO|tcf_sp_bg001.py:              main:168:10584] 2018-02-10 14:38:41,722 > ============================================= TCF_SP_bg001() e
+[INFO|     include.py:       showCominfo: 87:10584] 2018-02-10 14:38:41,722 > #######################################################
+[INFO|     include.py:       showCominfo: 88:10584] 2018-02-10 14:38:41,722 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '143833', 'outtime': '143833', 'hostprog': 'BIG1001', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '7.761868'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CBB70>], 'pid': '00010584', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029996A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:10584] 2018-02-10 14:38:41,722 > #######################################################
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 95:10892] 2018-02-10 15:21:54,321 > ============================================= TCF_SP_bg001() s
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 96:10892] 2018-02-10 15:21:54,322 > DB connect 호출(dbconnect)
+[INFO|   comdbutil.py:            dbinit: 56:10892] 2018-02-10 15:21:54,358 > dbinit성공
+[INFO|tcf_sp_bg001.py:         tpsvrinit:109:10892] 2018-02-10 15:21:54,359 > dbconnect() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:123:10892] 2018-02-10 15:21:54,359 > tpsinit() call success
+[INFO|    sp_bg001.py:      SJF_SP_bg001:  8:10892] 2018-02-10 15:22:01,184 > SJF_SP_bg001 xxxxxxxx
+[INFO|    sp_bg001.py:      SJF_SP_bg001: 15:10892] 2018-02-10 15:22:01,184 > SJF_SP_bg001-성공
+[INFO|   sjfaction.py:            action: 38:10892] 2018-02-10 15:22:01,185 > SJF_SP_bg001() call success
+[INFO|     include.py:       showCominfo: 87:10892] 2018-02-10 15:22:01,185 > #######################################################
+[INFO|     include.py:       showCominfo: 88:10892] 2018-02-10 15:22:01,185 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '', 'intime': '', 'outtime': '', 'hostprog': 'BIG1003', 'logfile': '', 'interval': ''}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CEB70>], 'pid': '00010892', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029A3438>], 'indata': [], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:10892] 2018-02-10 15:22:01,185 > #######################################################
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 25:10892] 2018-02-10 15:22:01,185 > TCF_SP_bg001 모듈시작
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 28:10892] 2018-02-10 15:22:01,185 > =================== STF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 29:10892] 2018-02-10 15:22:01,186 > STF() start 
+[INFO|  stf_common.py:               STF: 21:10892] 2018-02-10 15:22:01,186 > set sysdate
+[INFO|  stf_common.py:               STF: 24:10892] 2018-02-10 15:22:01,186 > set sysintime
+[INFO|  stf_common.py:               STF: 28:10892] 2018-02-10 15:22:01,186 > set os type
+[INFO|  stf_common.py:               STF: 31:10892] 2018-02-10 15:22:01,186 > set start int time
+[INFO|  stf_common.py:               STF: 35:10892] 2018-02-10 15:22:01,186 > set indata-4
+[INFO|  stf_common.py:               STF: 44:10892] 2018-02-10 15:22:01,187 > 서비스로그파일을 정한다.
+[INFO|  stf_common.py:               STF: 54:10892] 2018-02-10 15:22:01,187 > set interval 0
+[INFO|  stf_common.py:               STF: 57:10892] 2018-02-10 15:22:01,187 > set logfile-C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210
+[INFO|     tpsutil.py:             tpenv:355:10892] 2018-02-10 15:22:01,195 > ▲tpenv()-성공:
+[INFO|   comdbutil.py:        ibatisload:111:10892] 2018-02-10 15:22:01,197 > ▲ibatisload()-성공:
+[INFO|     tpsutil.py:           tpbegin:270:10892] 2018-02-10 15:22:01,197 > ▲tpbegin()-성공:True
+[INFO|  stf_common.py:               STF: 70:10892] 2018-02-10 15:22:01,197 > STF함수 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 31:10892] 2018-02-10 15:22:01,197 > STF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 34:10892] 2018-02-10 15:22:01,197 > STF() 함수호출성공 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 35:10892] 2018-02-10 15:22:01,197 > ===================AP [sp_bg001] main start 
+[INFO|     big1003.py:           BIG1003: 12:10892] 2018-02-10 15:22:01,197 > BIG1003_start() start 
+[INFO|     big1003.py:     BIG1003_start: 39:10892] 2018-02-10 15:22:01,197 > BIG1003_start-성공
+[INFO|     big1003.py:           BIG1003: 14:10892] 2018-02-10 15:22:01,197 > BIG1003_processing() start 
+[INFO|     big1003.py:BIG1003_processing: 48:10892] 2018-02-10 15:22:01,198 > #################################################################1518243721.0
+[ERROR|     big1003.py:BIG1003_processing: 52:10892] 2018-02-10 15:22:01,198 > BIG1003_processing [Errno 2] No such file or directory: '2BEXXX01.txt'
+[INFO|     big1003.py:           BIG1003: 22:10892] 2018-02-10 15:22:01,198 > BIG1003-성공
+[INFO|     big1003.py:       BIG1003_end: 69:10892] 2018-02-10 15:22:01,198 > BIG1003_end-성공
+[INFO|    sp_bg001.py:          SP_bg001: 62:10892] 2018-02-10 15:22:01,198 > SP_bg001-성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 39:10892] 2018-02-10 15:22:01,198 > ===================AP [sp_bg001] main end 
+[ERROR|tcf_sp_bg001.py:      TCF_SP_bg001: 44:10892] 2018-02-10 15:22:01,198 > AP[sp_bg001] 함수호출실패
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 52:10892] 2018-02-10 15:22:01,198 > SUS:F[TCF_SP_bg001]함수 호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 54:10892] 2018-02-10 15:22:01,198 > =================== ETF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 55:10892] 2018-02-10 15:22:01,198 > ETF() start 
+[INFO|  etf_common.py:               ETF: 15:10892] 2018-02-10 15:22:01,199 > 트랜잭션을 완료시킨다.
+[INFO|     tpsutil.py:        tprollback:325:10892] 2018-02-10 15:22:01,206 > ▲tprollback()-성공:
+[INFO|  etf_common.py:               ETF: 21:10892] 2018-02-10 15:22:01,206 > 프로세스 종료시간을 설정한다
+[INFO|  etf_common.py:               ETF: 24:10892] 2018-02-10 15:22:01,206 > 인터벌은 0.019879
+[INFO|  etf_common.py:               ETF: 26:10892] 2018-02-10 15:22:01,206 > 로그를 저장합니다
+[INFO|  etf_common.py:       ETF_logging: 43:10892] 2018-02-10 15:22:01,206 > filename==C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210----{'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152201', 'outtime': '152201', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.019879'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CEB70>], 'pid': '00010892', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029A3438>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029A3438>], 'outdata': []}
+[INFO|  etf_common.py:               ETF: 33:10892] 2018-02-10 15:22:01,213 > ETF 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 57:10892] 2018-02-10 15:22:01,213 > ETF() end 
+[INFO|     include.py:       showCominfo: 87:10892] 2018-02-10 15:22:01,213 > #######################################################
+[INFO|     include.py:       showCominfo: 88:10892] 2018-02-10 15:22:01,213 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152201', 'outtime': '152201', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.019879'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CEB70>], 'pid': '00010892', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029A3438>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029A3438>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:10892] 2018-02-10 15:22:01,213 > #######################################################
+[INFO|    sp_bg001.py:      EJF_SP_bg001: 31:10892] 2018-02-10 15:22:01,214 > EJF_SP_bg001-성공
+[INFO|   ejfaction.py:            action: 39:10892] 2018-02-10 15:22:01,214 > EJF_SP_bg001() call success
+[INFO|   comdbutil.py:           dbclose: 93:10892] 2018-02-10 15:22:01,214 > db close
+[INFO|tcf_sp_bg001.py:              main:168:10892] 2018-02-10 15:22:01,214 > ============================================= TCF_SP_bg001() e
+[INFO|     include.py:       showCominfo: 87:10892] 2018-02-10 15:22:01,214 > #######################################################
+[INFO|     include.py:       showCominfo: 88:10892] 2018-02-10 15:22:01,214 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152201', 'outtime': '152201', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.019879'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CEB70>], 'pid': '00010892', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029A3438>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029A3438>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:10892] 2018-02-10 15:22:01,215 > #######################################################
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 95:12072] 2018-02-10 15:24:06,364 > ============================================= TCF_SP_bg001() s
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 96:12072] 2018-02-10 15:24:06,365 > DB connect 호출(dbconnect)
+[INFO|   comdbutil.py:            dbinit: 56:12072] 2018-02-10 15:24:06,407 > dbinit성공
+[INFO|tcf_sp_bg001.py:         tpsvrinit:109:12072] 2018-02-10 15:24:06,407 > dbconnect() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:123:12072] 2018-02-10 15:24:06,407 > tpsinit() call success
+[INFO|    sp_bg001.py:      SJF_SP_bg001:  8:12072] 2018-02-10 15:24:10,595 > SJF_SP_bg001 xxxxxxxx
+[INFO|    sp_bg001.py:      SJF_SP_bg001: 15:12072] 2018-02-10 15:24:10,596 > SJF_SP_bg001-성공
+[INFO|   sjfaction.py:            action: 38:12072] 2018-02-10 15:24:10,596 > SJF_SP_bg001() call success
+[INFO|     include.py:       showCominfo: 87:12072] 2018-02-10 15:24:10,596 > #######################################################
+[INFO|     include.py:       showCominfo: 88:12072] 2018-02-10 15:24:10,596 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '', 'intime': '', 'outtime': '', 'hostprog': 'BIG1003', 'logfile': '', 'interval': ''}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CEB70>], 'pid': '00012072', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000027C3470>], 'indata': [], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:12072] 2018-02-10 15:24:10,596 > #######################################################
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 25:12072] 2018-02-10 15:24:10,596 > TCF_SP_bg001 모듈시작
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 28:12072] 2018-02-10 15:24:10,596 > =================== STF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 29:12072] 2018-02-10 15:24:10,597 > STF() start 
+[INFO|  stf_common.py:               STF: 21:12072] 2018-02-10 15:24:10,597 > set sysdate
+[INFO|  stf_common.py:               STF: 24:12072] 2018-02-10 15:24:10,597 > set sysintime
+[INFO|  stf_common.py:               STF: 28:12072] 2018-02-10 15:24:10,597 > set os type
+[INFO|  stf_common.py:               STF: 31:12072] 2018-02-10 15:24:10,597 > set start int time
+[INFO|  stf_common.py:               STF: 35:12072] 2018-02-10 15:24:10,597 > set indata-4
+[INFO|  stf_common.py:               STF: 44:12072] 2018-02-10 15:24:10,597 > 서비스로그파일을 정한다.
+[INFO|  stf_common.py:               STF: 54:12072] 2018-02-10 15:24:10,597 > set interval 0
+[INFO|  stf_common.py:               STF: 57:12072] 2018-02-10 15:24:10,597 > set logfile-C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210
+[INFO|     tpsutil.py:             tpenv:355:12072] 2018-02-10 15:24:10,608 > ▲tpenv()-성공:
+[INFO|   comdbutil.py:        ibatisload:111:12072] 2018-02-10 15:24:10,608 > ▲ibatisload()-성공:
+[INFO|     tpsutil.py:           tpbegin:270:12072] 2018-02-10 15:24:10,609 > ▲tpbegin()-성공:True
+[INFO|  stf_common.py:               STF: 70:12072] 2018-02-10 15:24:10,609 > STF함수 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 31:12072] 2018-02-10 15:24:10,609 > STF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 34:12072] 2018-02-10 15:24:10,609 > STF() 함수호출성공 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 35:12072] 2018-02-10 15:24:10,609 > ===================AP [sp_bg001] main start 
+[INFO|     big1003.py:           BIG1003: 12:12072] 2018-02-10 15:24:10,609 > BIG1003_start() start 
+[INFO|     big1003.py:     BIG1003_start: 39:12072] 2018-02-10 15:24:10,609 > BIG1003_start-성공
+[INFO|     big1003.py:           BIG1003: 14:12072] 2018-02-10 15:24:10,610 > BIG1003_processing() start 
+[INFO|     big1003.py:BIG1003_processing: 48:12072] 2018-02-10 15:24:10,610 > #################################################################1518243850.0
+[ERROR|     big1003.py:BIG1003_processing: 52:12072] 2018-02-10 15:24:10,610 > BIG1003_processing [Errno 2] No such file or directory: '2BEXXX01.txt'
+[INFO|     big1003.py:           BIG1003: 22:12072] 2018-02-10 15:24:10,610 > BIG1003-성공
+[INFO|     big1003.py:       BIG1003_end: 69:12072] 2018-02-10 15:24:10,610 > BIG1003_end-성공
+[INFO|    sp_bg001.py:          SP_bg001: 62:12072] 2018-02-10 15:24:10,610 > SP_bg001-성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 39:12072] 2018-02-10 15:24:10,611 > ===================AP [sp_bg001] main end 
+[ERROR|tcf_sp_bg001.py:      TCF_SP_bg001: 44:12072] 2018-02-10 15:24:10,611 > AP[sp_bg001] 함수호출실패
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 52:12072] 2018-02-10 15:24:10,611 > SUS:F[TCF_SP_bg001]함수 호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 54:12072] 2018-02-10 15:24:10,611 > =================== ETF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 55:12072] 2018-02-10 15:24:10,611 > ETF() start 
+[INFO|  etf_common.py:               ETF: 15:12072] 2018-02-10 15:24:10,611 > 트랜잭션을 완료시킨다.
+[INFO|     tpsutil.py:        tprollback:325:12072] 2018-02-10 15:24:10,620 > ▲tprollback()-성공:
+[INFO|  etf_common.py:               ETF: 21:12072] 2018-02-10 15:24:10,620 > 프로세스 종료시간을 설정한다
+[INFO|  etf_common.py:               ETF: 24:12072] 2018-02-10 15:24:10,620 > 인터벌은 0.022893
+[INFO|  etf_common.py:               ETF: 26:12072] 2018-02-10 15:24:10,620 > 로그를 저장합니다
+[INFO|  etf_common.py:       ETF_logging: 43:12072] 2018-02-10 15:24:10,620 > filename==C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210----{'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152410', 'outtime': '152410', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.022893'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CEB70>], 'pid': '00012072', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000027C3470>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000027C3470>], 'outdata': []}
+[INFO|  etf_common.py:               ETF: 33:12072] 2018-02-10 15:24:10,627 > ETF 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 57:12072] 2018-02-10 15:24:10,628 > ETF() end 
+[INFO|     include.py:       showCominfo: 87:12072] 2018-02-10 15:24:10,628 > #######################################################
+[INFO|     include.py:       showCominfo: 88:12072] 2018-02-10 15:24:10,628 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152410', 'outtime': '152410', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.022893'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CEB70>], 'pid': '00012072', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000027C3470>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000027C3470>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:12072] 2018-02-10 15:24:10,628 > #######################################################
+[INFO|    sp_bg001.py:      EJF_SP_bg001: 31:12072] 2018-02-10 15:24:10,628 > EJF_SP_bg001-성공
+[INFO|   ejfaction.py:            action: 39:12072] 2018-02-10 15:24:10,629 > EJF_SP_bg001() call success
+[INFO|   comdbutil.py:           dbclose: 93:12072] 2018-02-10 15:24:10,629 > db close
+[INFO|tcf_sp_bg001.py:              main:168:12072] 2018-02-10 15:24:10,629 > ============================================= TCF_SP_bg001() e
+[INFO|     include.py:       showCominfo: 87:12072] 2018-02-10 15:24:10,630 > #######################################################
+[INFO|     include.py:       showCominfo: 88:12072] 2018-02-10 15:24:10,630 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152410', 'outtime': '152410', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.022893'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048CEB70>], 'pid': '00012072', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000027C3470>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000027C3470>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:12072] 2018-02-10 15:24:10,630 > #######################################################
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 95:8004] 2018-02-10 15:26:22,746 > ============================================= TCF_SP_bg001() s
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 96:8004] 2018-02-10 15:26:22,747 > DB connect 호출(dbconnect)
+[INFO|   comdbutil.py:            dbinit: 56:8004] 2018-02-10 15:26:22,784 > dbinit성공
+[INFO|tcf_sp_bg001.py:         tpsvrinit:109:8004] 2018-02-10 15:26:22,785 > dbconnect() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:123:8004] 2018-02-10 15:26:22,785 > tpsinit() call success
+[INFO|    sp_bg001.py:      SJF_SP_bg001:  8:8004] 2018-02-10 15:26:26,646 > SJF_SP_bg001 xxxxxxxx
+[INFO|    sp_bg001.py:      SJF_SP_bg001: 15:8004] 2018-02-10 15:26:26,647 > SJF_SP_bg001-성공
+[INFO|   sjfaction.py:            action: 38:8004] 2018-02-10 15:26:26,647 > SJF_SP_bg001() call success
+[INFO|     include.py:       showCominfo: 87:8004] 2018-02-10 15:26:26,647 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8004] 2018-02-10 15:26:26,647 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '', 'intime': '', 'outtime': '', 'hostprog': 'BIG1003', 'logfile': '', 'interval': ''}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048D0A90>], 'pid': '00008004', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029C53C8>], 'indata': [], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8004] 2018-02-10 15:26:26,647 > #######################################################
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 25:8004] 2018-02-10 15:26:26,647 > TCF_SP_bg001 모듈시작
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 28:8004] 2018-02-10 15:26:26,647 > =================== STF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 29:8004] 2018-02-10 15:26:26,648 > STF() start 
+[INFO|  stf_common.py:               STF: 21:8004] 2018-02-10 15:26:26,648 > set sysdate
+[INFO|  stf_common.py:               STF: 24:8004] 2018-02-10 15:26:26,648 > set sysintime
+[INFO|  stf_common.py:               STF: 28:8004] 2018-02-10 15:26:26,648 > set os type
+[INFO|  stf_common.py:               STF: 31:8004] 2018-02-10 15:26:26,648 > set start int time
+[INFO|  stf_common.py:               STF: 35:8004] 2018-02-10 15:26:26,648 > set indata-4
+[INFO|  stf_common.py:               STF: 44:8004] 2018-02-10 15:26:26,648 > 서비스로그파일을 정한다.
+[INFO|  stf_common.py:               STF: 54:8004] 2018-02-10 15:26:26,648 > set interval 0
+[INFO|  stf_common.py:               STF: 57:8004] 2018-02-10 15:26:26,649 > set logfile-C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210
+[INFO|     tpsutil.py:             tpenv:355:8004] 2018-02-10 15:26:26,657 > ▲tpenv()-성공:
+[INFO|   comdbutil.py:        ibatisload:111:8004] 2018-02-10 15:26:26,657 > ▲ibatisload()-성공:
+[INFO|     tpsutil.py:           tpbegin:270:8004] 2018-02-10 15:26:26,658 > ▲tpbegin()-성공:True
+[INFO|  stf_common.py:               STF: 70:8004] 2018-02-10 15:26:26,658 > STF함수 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 31:8004] 2018-02-10 15:26:26,658 > STF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 34:8004] 2018-02-10 15:26:26,658 > STF() 함수호출성공 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 35:8004] 2018-02-10 15:26:26,658 > ===================AP [sp_bg001] main start 
+[INFO|     big1003.py:           BIG1003: 12:8004] 2018-02-10 15:26:26,658 > BIG1003_start() start 
+[INFO|     big1003.py:     BIG1003_start: 39:8004] 2018-02-10 15:26:26,658 > BIG1003_start-성공
+[INFO|     big1003.py:           BIG1003: 14:8004] 2018-02-10 15:26:26,658 > BIG1003_processing() start 
+[INFO|     big1003.py:BIG1003_processing: 48:8004] 2018-02-10 15:26:26,659 > #################################################################1518243986.0
+[ERROR|     big1003.py:BIG1003_processing: 52:8004] 2018-02-10 15:26:26,659 > BIG1003_processing [Errno 2] No such file or directory: '2BEXXX01.txt'
+[INFO|     big1003.py:           BIG1003: 22:8004] 2018-02-10 15:26:26,659 > BIG1003-성공
+[INFO|     big1003.py:       BIG1003_end: 69:8004] 2018-02-10 15:26:26,659 > BIG1003_end-성공
+[INFO|    sp_bg001.py:          SP_bg001: 62:8004] 2018-02-10 15:26:26,660 > SP_bg001-성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 39:8004] 2018-02-10 15:26:26,660 > ===================AP [sp_bg001] main end 
+[ERROR|tcf_sp_bg001.py:      TCF_SP_bg001: 44:8004] 2018-02-10 15:26:26,660 > AP[sp_bg001] 함수호출실패
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 52:8004] 2018-02-10 15:26:26,660 > SUS:F[TCF_SP_bg001]함수 호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 54:8004] 2018-02-10 15:26:26,660 > =================== ETF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 55:8004] 2018-02-10 15:26:26,660 > ETF() start 
+[INFO|  etf_common.py:               ETF: 15:8004] 2018-02-10 15:26:26,660 > 트랜잭션을 완료시킨다.
+[INFO|     tpsutil.py:        tprollback:325:8004] 2018-02-10 15:26:26,668 > ▲tprollback()-성공:
+[INFO|  etf_common.py:               ETF: 21:8004] 2018-02-10 15:26:26,668 > 프로세스 종료시간을 설정한다
+[INFO|  etf_common.py:               ETF: 24:8004] 2018-02-10 15:26:26,668 > 인터벌은 0.020148
+[INFO|  etf_common.py:               ETF: 26:8004] 2018-02-10 15:26:26,668 > 로그를 저장합니다
+[INFO|  etf_common.py:       ETF_logging: 43:8004] 2018-02-10 15:26:26,669 > filename==C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg001.log.20180210----{'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152626', 'outtime': '152626', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.020148'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048D0A90>], 'pid': '00008004', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029C53C8>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029C53C8>], 'outdata': []}
+[INFO|  etf_common.py:               ETF: 33:8004] 2018-02-10 15:26:26,674 > ETF 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 57:8004] 2018-02-10 15:26:26,674 > ETF() end 
+[INFO|     include.py:       showCominfo: 87:8004] 2018-02-10 15:26:26,674 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8004] 2018-02-10 15:26:26,674 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152626', 'outtime': '152626', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.020148'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048D0A90>], 'pid': '00008004', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029C53C8>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029C53C8>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8004] 2018-02-10 15:26:26,674 > #######################################################
+[INFO|    sp_bg001.py:      EJF_SP_bg001: 31:8004] 2018-02-10 15:26:26,675 > EJF_SP_bg001-성공
+[INFO|   ejfaction.py:            action: 39:8004] 2018-02-10 15:26:26,675 > EJF_SP_bg001() call success
+[INFO|   comdbutil.py:           dbclose: 93:8004] 2018-02-10 15:26:26,675 > db close
+[INFO|tcf_sp_bg001.py:              main:168:8004] 2018-02-10 15:26:26,675 > ============================================= TCF_SP_bg001() e
+[INFO|     include.py:       showCominfo: 87:8004] 2018-02-10 15:26:26,675 > #######################################################
+[INFO|     include.py:       showCominfo: 88:8004] 2018-02-10 15:26:26,675 > {'com_info': {'svcname': 'sp_bg001', 'sysdate': '20180210', 'intime': '152626', 'outtime': '152626', 'hostprog': 'BIG1003', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg001.log.20180210', 'interval': '0.020148'}, 'dbconn': [<pymysql.connections.Connection object at 0x00000000048D0A90>], 'pid': '00008004', 'ostype': 'Windows', 'err_info': {'count': 2, 'err1cod': 'EBIG1003', 'err1msg': "BIG1003_processing,[Errno 2] No such file or directory: '2BEXXX01.txt'", 'err2cod': 'EBIG004', 'err2msg': 'SP_bg001 수행중 오류발생', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', <src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029C53C8>], 'indata': [<src.big.sp_bg001.transfer.big1000cdto.BIG1000CDTO object at 0x00000000029C53C8>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:8004] 2018-02-10 15:26:26,675 > #######################################################

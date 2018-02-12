@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 from src.com.fwk.business.util.logging import comlogging
 from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+from gensim.models import word2vec
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -55,3 +57,54 @@ def measurePCA() :
     # title
     plt.title('PCA result')
     plt.show()
+
+
+def mesureKMEAN():
+    df = pd.DataFrame(columns=['x', 'y'])
+
+    df.loc[0] = [3, 1]
+    df.loc[1] = [4, 1]
+    df.loc[2] = [3, 2]
+    df.loc[3] = [4, 2]
+    df.loc[4] = [10, 5]
+    df.loc[5] = [10, 6]
+    df.loc[6] = [11, 5]
+    df.loc[7] = [11, 6]
+    df.loc[8] = [15, 1]
+    df.loc[9] = [15, 2]
+    df.loc[10] = [16, 1]
+    df.loc[11] = [16, 2]
+
+    print(df.head(20))
+
+    # visualize data point
+    sns.lmplot('x', 'y', data=df, fit_reg=False, scatter_kws={"s": 200})  # x-axis, y-axis, data, no line, marker size
+
+    # title
+    plt.title('kmean plot')
+
+    # x-axis label
+    plt.xlabel('x')
+
+    # y-axis label
+    plt.ylabel('y')
+    plt.show()
+
+    # convert dataframe to numpy array
+    data_points = df.values
+    kmeans = KMeans(n_clusters=3).fit(data_points)
+    print( kmeans.labels_)
+    print(kmeans.cluster_centers_)
+
+    df['cluster_id'] = kmeans.labels_
+    print(df.head(12))
+
+    sns.lmplot('x', 'y', data=df, fit_reg=False,  # x-axis, y-axis, data, no line
+              scatter_kws={"s": 150},  # marker size
+              hue="cluster_id")  # color
+
+    # title
+    plt.title('after kmean clustering')
+    plt.show()
+
+
