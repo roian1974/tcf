@@ -1,0 +1,90 @@
+---
+
+version: 1
+
+disable_existing_loggers: true
+
+formatters:
+    simple:
+        format: "[%(levelname)s] %(asctime)s - %(name)s - %(message)s"
+    standard:
+        format: "[%(levelname)s|%(filename)s:%(lineno)s] %(asctime)s > %(message)s"
+    error:
+        format: "%(levelname)s <PID %(process)d:%(processName)s> %(name)s.%(funcName)s(): %(message)s"
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+
+  debug_file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    formatter: standard
+    when: d
+    interval : 7
+    backupCount: 30
+    filename: ../logs/test_info.log
+    encoding: utf8
+
+  info_file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: INFO
+    formatter: simple
+    when: d
+    interval : 7
+    backupCount: 30
+    filename: ../logs/test_info.log
+    encoding: utf8
+
+  error_file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: ERROR
+    formatter: error
+    when: d
+    interval : 7
+    backupCount: 30
+    filename: ../logs/test_error.log
+    encoding: utf8
+
+#    critical_file_handler:
+#      class: logging.handlers.TimedRotatingFileHandler
+#      level: CRITICAL
+#      formatter: error
+#      when: d
+#      interval : 7
+#      backupCount: 30
+#      filename: ../logs/test_critical.log
+#      encoding: utf8
+
+  warn_file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: WARN
+    formatter: simple
+    when: d
+    interval : 7
+    backupCount: 30
+    filename: ../logs/test_warn.log
+    encoding: utf8
+
+root:
+  level: NOTSET
+#    handlers: [console,info_file_handler, debug_file_handler, error_file_handler, critical_file_handler, debug_file_handler, warn_file_handler]
+#    handlers: [console,info_file_handler, debug_file_handler, warn_file_handler, err_file_handler, critical_file_handler]
+  handlers: [console, info_file_handler, warn_file_handler, error_file_handler]
+  propogate: yes
+
+
+loggers:
+    <module>:
+        level: INFO
+#        handlers: [console, info_file_handler, error_file_handler, critical_file_handler, debug_file_handler, warn_file_handler]
+        handlers: [console, info_file_handler, error_file_handler, debug_file_handler]
+        propogate: no
+
+    <module.x>:
+        level: DEBUG
+#        handlers: [info_file_handler, error_file_handler, critical_file_handler, debug_file_handler, warn_file_handler]
+        handlers: [info_file_handler, error_file_handler, debug_file_handler]
+        propogate: yes

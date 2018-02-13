@@ -1,0 +1,25 @@
+
+1) python path을 설정해준다.
+    cmd> set pythonpath=C:\jDev\MyWorks\PycharmProjects\Roian
+    :: from src import xxxxx
+
+2) 솔루션
+    파이선
+    아나콘다 - (이것설치하면 파이선까지 오우케이)
+    파이참
+    Mysql -  sudo apt-get install mysql-server
+    왓슨 - x
+    TOAD
+
+3) 모듈 설치
+   1. 왓슨
+        a. pip install --upgrade watson-developer-cloud
+    2. 데이타베이스
+        a. pip install pymysql
+    3. 사용 패키지
+        a. pip install tailer
+        b. pip install xlrd
+        c. pip install xlwt
+        d. pip install pandas
+        pip install DataFrame
+

@@ -1,0 +1,26 @@
+ip : 192.168.199.129
+user : bigdata/1234qwer
+
+1. sudo addusr bigdata
+2. sudo 권한주기
+   sudo apt-get install sudo
+3. virtualenv 환경
+   	root@ubuntu:~$pip install virtualenv
+	bigdata@ubuntu:~$ virtualenv vcomenv
+	bigdata@ubuntu:~$ cd vcomenv
+	bigdata@ubuntu:~$ cd bin
+   	bigdata@ubuntu:~$ source activate	
+	(vcomenv) bigdata@ubuntu:~$
+4. python path 잡기
+    export PYTHONPATH=/home/bigdata/vcomenv
+5. 라이브러리 추가
+    pip install --upgrade watson-developer-cloud
+    pip install pymysql
+    pip install tailer
+    pip install xlrd
+    pip install xlwt
+    pip install pandas
+6. 로그레벨
+    export LOGLEV=INFO
+7. 실행방법
+    pyexe tcf_sp_commo.py sp_commo COM1000

@@ -1,0 +1,9 @@
+1. 메시지 브로커 설치
+    - 설치확인
+        redis-server
+
+1. celery  설치
+    pip install --upgrade celery[redis]
+2. 가이드
+    http://dgkim5360.tistory.com/entry/python-celery-asynchronous-system-with-redis?category=892553
+

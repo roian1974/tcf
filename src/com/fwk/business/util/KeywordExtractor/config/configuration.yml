@@ -1,0 +1,88 @@
+development:
+  env_name: development
+  max_worker: 2
+  # {2} : &page=
+  url: 'https://api.snek.ai/haystack/v1/news/{0}/_search?query={1}{2}&clustering=1&count=100&min_score=3&summary=0'
+#  url: 'https://api.snek.ai/haystack/v1/news/{0}/_search?query={1}{2}&from={3}&to={4}&clustering=1&count=100&min_score=3&summary=0'
+#  url: 'https://api.snek.ai/haystack/v1/news/{0}/_search?query={1}~25{2}&from={3}&to={4}&clustering=oustering=0&count=100&min_score=3&summary=0'
+#  url_pagging: 'https://api.snek.ai/haystack/v1/news/{0}/_search?query={1}~25&page={2}&from={3}&to={4}&clustering=0&count=100&min_score=3&summary=0'
+  search_category: political,economy
+  log_leve: logging.DEBUG
+  location:
+#    backrupcy:
+#      input: ./input/bankruptcy/
+#      output: ./output/bankruptcy/
+#    normal:
+#      input: ./input/normal/
+#      output: ./output/normal/
+    input: ./input/
+#    output_normal: /Users/kangholee/Documents/kdb_data/normal/
+    output_normal: C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\util\KeywordExtractor\data\normal\
+
+#    output_bankruptcy: /Users/kangholee/Documents/kdb_data/bankruptcy/
+    output_bankruptcy: C:\jDev\MyWorks\PycharmProjects\Roian\src\com\fwk\business\util\KeywordExtractor\data\bankruptcy\
+#      out:
+#        raw: raw/
+#        excel: excel/
+#        tsv: tsv/
+#        csv: csv/
+#        spark: spark/
+    log: ./logs/
+    key: ./key/access_key
+    format: TSV
+  file_name:
+    keyword_list: keyoword_list.txt
+    keyword_model: keyword_model.model
+    company_list: complay_list.tsv
+#    companies:
+#      bankrupucy: bankruptcy.csv
+#      normal: normal_corp.csv
+#    positive_keyword: keyword_pos.tsv
+#    negative_keyword: keyword_neg.tsv
+  database:
+    url: ec2-13-125-128-107.ap-northeast-2.compute.amazonaws.com
+    port: 3396
+    schema: bankruptcy_prediction
+    user:
+      id: kdb-fountai
+      password: {hoon@mysql-user}
+    autocommit: False
+product:
+  env_name: production
+  max_worker: 20
+  url: 'https://api.snek.ai/haystack/v1/news/political,economy/_search?query={0}~10&page={1}&from={2}&to={3}&clustering=0&count=100&min_score=3&summary=0'
+  search_category: political,economy
+  log_leve: logging.ERROR
+  location:
+#    backrupcy:
+#      input: ./input/bankruptcy/
+#      output: ./output/bankruptcy/
+#    normal:
+#      input: ./input/normal/
+#      output: ./output/normal/
+    input: ./input/
+    output: ./output/
+#      out:
+#        raw: raw/
+#        excel: excel/
+#        tsv: tsv/
+#        csv: csv/
+#        spark: spark/
+    log: ./logs/
+    key: ./key/access_key
+    format: TSV
+  file_name:
+    company_list: complay_list.tsv
+#    companies:
+#      bankrupucy: bankruptcy.csv
+#      normal: normal_corp.csv
+#    positive_keyword: keyword_pos.tsv
+#    negative_keyword: keyword_neg.tsv
+  database:
+    url: localhost
+    port: 3396
+    schema: bankruptcy_prediction
+    user:
+      id: fountai
+      password: fountai2017
+    autocommit: False

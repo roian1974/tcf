@@ -74,6 +74,13 @@
         pip install scipy
         pip install seaborn
         pip install matplotlib
+        pip install konlpy
+        pip install bs4
+        pip install gensim
+        pip install pyyaml
+        pip install wheel
+        pip install JPype1-0.6.2-cp36-cp36m-win_amd64.whl (이것만 설치성공)
+
 
 
 
@@ -333,7 +340,56 @@
 ||--------------------------------------------------------------------------------------------------------------------
     1. 설치가이드
         http://www.pyrasis.com/main/Subversion-HOWTO
-    2.
+    2. 배포
+       -- pip install twine
+       -- https://pypi.python.org/pypi 에서 계정생성 (roian/!1974yoe01qaz2wsx)
+       -- gitHub에 Repository을 만든다. 계정(roian1974/changwskr@gmail.com/!1974yoe0)
+          가이드 : http://emflant.tistory.com/135
+          platform 레파지포리 생성
+          https://github.com/roian1974/platform
+       -- https://git-scm.com/ 에서 git을 다운로드  (https://git-scm.com/download/win)
+       -- cmd에서  git을 실행한다.
+          cd C:\jDev\MyWorks\PycharmProjects\Roian
+          git init
+          git remote add origin https://github.com/roian1974/platform
+          git pull origin master
+          git add .
+          git commit -m "first commit"
+          git push -u origin master
+
+       -- 로컬에서 git을 이용해서 파일을 만들고 넣는 방법
+           > jjj.py
+          git add jjj.py
+          git status
+          git commit -m "akkakkjk"
+          (파일을 삭제이후 git을 통한 복구)
+          git checkout 파일명
+       -- git remote 사용법
+          1. 현재 로컬리파지토리에 연결된 리모트 리파지토리 정보확인하기
+                git remote
+          2. 리모트리파지토리 연결
+                git remote add origin https://github.com/roian1974/platform
+          3. 현재의 브렌치를 확인해 본다
+                git branch
+          4. 현재의 파일을 서버리파지토리로 이동
+                git push origin master
+
+
+       -- setup.py 파일을 작성한다.
+            setup(name='roian-fwk',
+                  version='0.1.1',
+                  url='https://github.com/roian1974/platform',
+                  license='JWS',
+                  author='roian',
+                  author_email='changwskr@gmail.com',
+                  description='simple tcf platform',
+                  packages=['roian_fwk'],
+                  install_requires=['bs4'])
+       -- 프로젝트 디렉토리로 이동 cd C:\jDev\MyWorks\PycharmProjects\Roian
+       -- python setup.py sdist
+          python setup.py sdist --formats=gztar,zip
+       -- twine upload dist/*
+       -- https://pypi.python.org/pypi 에서 확인한다.
 
 ||--------------------------------------------------------------------------------------------------------------------
     개발툴

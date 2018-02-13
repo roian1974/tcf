@@ -1,0 +1,55 @@
+{
+    "select": [
+        {
+            "id": "select_document_01",
+            "sql" : "SELECT doc_id,doc_content FROM document WHERE use_yn = '%s'",
+            "parameter" : ["N"]
+        },
+        {
+            "id": "select_doc_sentiment_02",
+            "sql" : "SELECT no,doc_id,doc_label FROM doc_sentiment WHERE doc_id = '%s' AND use_yn = '%s'",
+            "parameter" : []
+        },
+        {
+            "id": "select_doc_sentiment_05",
+            "sql" : "SELECT doc_id , reg_date FROM doc_sentiment WHERE use_yn = '%s' AND reg_date = '%s' GROUP BY doc_id ASC",
+            "parameter" : ["N","20180114"]
+        }
+    ],
+    "insert": [
+        {
+            "id": "insert_doc_sentiment_01",
+            "sql" : "INSERT INTO doc_sentiment ( doc_id,doc_score,doc_label,model_version,use_yn,reg_date,reg_time,udt_date,udt_time ) VALUES ( %s,%s,%s,%s,%s,%s,%s,%s,%s )",
+            "parameter" : []
+        },
+        {
+            "id": "insert_target_sentiment_02",
+            "sql" : "INSERT INTO target_sentiment ( doc_id, target, target_type, target_score, target_label, target_sad, target_joy, target_fear, target_disgust, target_anger, target_subtype, target_count, use_yn, reg_date, reg_time, udt_date, udt_time ) VALUES ( %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+            "parameter" : []
+        }
+    ],
+    "update": [
+        {
+            "id": "update_document_01",
+            "sql" : "UPDATE document SET use_yn = %s, udt_date = %s, udt_time = %s WHERE doc_id = %s",
+            "parameter" : []
+        },
+        {
+            "id": "update_doc_sentiment_04",
+            "sql" : "UPDATE doc_sentiment SET use_yn = %s, udt_date = %s, udt_time = %s WHERE doc_id = %s AND reg_date = %s",
+            "parameter" : []
+        },
+       {
+            "id": "update_doc_sentiment_09",
+            "sql" : "UPDATE doc_sentiment SET use_yn = %s, udt_date = %s, udt_time = %s WHERE no = %s",
+            "parameter" : []
+        }
+    ],
+    "delete":[
+       {
+            "id": "delete_doc_sentiment_01",
+            "sql" : "DELETE FROM doc_sentiment WHERE doc_id = %s and reg_date = %s",
+            "parameter" : []
+        }
+    ]
+}
