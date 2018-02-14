@@ -34,26 +34,6 @@ def EJF_SP_bg004():
         else:
             return True
 
-# 실행방식
-# sp_bg002 BIG4001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv LogisR 20150101
-# sp_bg002 BIG4001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv NaiveEyes 20150101
-# python tcf_sp_commo.py sp_bg002 BIG4001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv NaiveEyes 20150101
-# python tcf_sp_commo.py sp_bg002 BIG4002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv NaiveEyes 20141231
-
-# python tcf_sp_commo.py sp_bg002 BIG4001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv RF 20150101
-# python tcf_sp_commo.py sp_bg002 BIG4002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv RF 20141231
-
-# python tcf_sp_commo.py sp_bg002 BIG4001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv SVMGusian 20150101
-# python tcf_sp_commo.py sp_bg002 BIG4002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv SVMGusian 20141231
-
-# python tcf_sp_commo.py sp_bg002 BIG4001 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv SVMLinear 20150101
-# python tcf_sp_commo.py sp_bg002 BIG4002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv SVMLinear 20141231
-
-# sp_bg002 BIG4002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv LogisR 20141231
-# sp_bg002 BIG4002 C:\jDev\MyWorks\PycharmProjects\Roian\log\input\\big\Full_Data.csv NaiveEyes 20141231
-
-# 모델 = [LogisR, NaiveEyes, RF, SVMGusian, SVMLinear]
-
 def SP_bg004():
 
     hostprog = include.getHostProg()
@@ -62,9 +42,9 @@ def SP_bg004():
         if hostprog == 'BIG4000' :
             big4000.BIG4000()
         elif hostprog == 'BIG4001' :
-            big4001.BIG4001()  # 전처리 과정과 훈련모델를 생성하는 과정
+            big4001.BIG4001()
         elif hostprog == 'BIG4002' :
-            big4002.BIG4002()  # 훈련모델을 가지고 테스팅하는 단계
+            big4002.BIG4002()
         elif hostprog == 'BIG4003' :
             big4003.BIG4003()
         else :

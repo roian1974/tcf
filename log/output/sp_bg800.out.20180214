@@ -1,0 +1,59 @@
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 95:9684] 2018-02-14 23:06:34,130 > ============================================= TCF_SP_bg001() s
+[INFO|tcf_sp_bg001.py:         tpsvrinit: 96:9684] 2018-02-14 23:06:34,130 > DB connect 호출(dbconnect)
+[INFO|   comdbutil.py:            dbinit: 56:9684] 2018-02-14 23:06:34,177 > dbinit성공
+[INFO|tcf_sp_bg001.py:         tpsvrinit:109:9684] 2018-02-14 23:06:34,177 > dbconnect() call success
+[INFO|tcf_sp_bg001.py:         tpsvrinit:123:9684] 2018-02-14 23:06:34,177 > tpsinit() call success
+[INFO|     include.py:       showCominfo: 87:9684] 2018-02-14 23:06:34,177 > #######################################################
+[INFO|     include.py:       showCominfo: 88:9684] 2018-02-14 23:06:34,177 > {'com_info': {'svcname': 'sp_bg800', 'sysdate': '', 'intime': '', 'outtime': '', 'hostprog': 'BIG8002', 'logfile': '', 'interval': ''}, 'dbconn': [<pymysql.connections.Connection object at 0x000000000475CF28>], 'pid': '00009684', 'ostype': 'Windows', 'err_info': {'count': 0, 'err1cod': '', 'err1msg': '', 'err2cod': '', 'err2msg': '', 'err3cod': '', 'err3msg': '', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'Z'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg800', 'BIG8002', <src.big.sp_bg800.transfer.big8001cdto.BIG8001CDTO object at 0x00000000021746A0>], 'indata': [], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:9684] 2018-02-14 23:06:34,177 > #######################################################
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 25:9684] 2018-02-14 23:06:34,177 > TCF_SP_bg001 모듈시작
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 28:9684] 2018-02-14 23:06:34,177 > =================== STF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 29:9684] 2018-02-14 23:06:34,177 > STF() start 
+[INFO|  stf_common.py:               STF: 21:9684] 2018-02-14 23:06:34,177 > set sysdate
+[INFO|  stf_common.py:               STF: 24:9684] 2018-02-14 23:06:34,177 > set sysintime
+[INFO|  stf_common.py:               STF: 28:9684] 2018-02-14 23:06:34,177 > set os type
+[INFO|  stf_common.py:               STF: 31:9684] 2018-02-14 23:06:34,177 > set start int time
+[INFO|  stf_common.py:               STF: 35:9684] 2018-02-14 23:06:34,177 > set indata-4
+[INFO|  stf_common.py:               STF: 44:9684] 2018-02-14 23:06:34,177 > 서비스로그파일을 정한다.
+[INFO|  stf_common.py:               STF: 54:9684] 2018-02-14 23:06:34,177 > set interval 0
+[INFO|  stf_common.py:               STF: 57:9684] 2018-02-14 23:06:34,177 > set logfile-C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg800.log.20180214
+[INFO|     tpsutil.py:             tpenv:355:9684] 2018-02-14 23:06:34,192 > ▲tpenv()-성공:
+[INFO|   comdbutil.py:        ibatisload:111:9684] 2018-02-14 23:06:34,192 > ▲ibatisload()-성공:
+[INFO|     tpsutil.py:           tpbegin:270:9684] 2018-02-14 23:06:34,192 > ▲tpbegin()-성공:True
+[INFO|  stf_common.py:               STF: 70:9684] 2018-02-14 23:06:34,192 > STF함수 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 31:9684] 2018-02-14 23:06:34,192 > STF() end 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 34:9684] 2018-02-14 23:06:34,192 > STF() 함수호출성공 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 35:9684] 2018-02-14 23:06:34,192 > ===================AP [sp_bg800] main start 
+[INFO|     big8002.py:           BIG8002: 11:9684] 2018-02-14 23:06:36,017 > BIG8002_start() start 
+[INFO|     big8002.py:     BIG8002_start: 48:9684] 2018-02-14 23:06:36,017 > BIG8002_start-성공
+[INFO|     big8002.py:           BIG8002: 16:9684] 2018-02-14 23:06:36,017 > BIG8002_processing() start 
+[INFO|     big8002.py:BIG8002_processing: 57:9684] 2018-02-14 23:06:36,017 > #################################################################1518617196.0
+[ERROR|    dc_bg802.py:       preAnalysis: 59:9684] 2018-02-14 23:06:36,033 > ▲preAnalysis()-ERR:Error tokenizing data. C error: Expected 2 fields in line 3, saw 4
+
+[ERROR|    dc_bg802.py:        trainModel: 86:9684] 2018-02-14 23:06:36,033 > ▲trainModel()-ERR:'bool' object has no attribute 'model_type'
+[INFO|     big8002.py:BIG8002_processing: 63:9684] 2018-02-14 23:06:36,033 > #################################################################1518617196.0
+[INFO|     big8002.py:BIG8002_processing: 68:9684] 2018-02-14 23:06:36,033 > BIG8002_processing-성공
+[INFO|     big8002.py:           BIG8002: 27:9684] 2018-02-14 23:06:36,033 > BIG8002-성공
+[INFO|     big8002.py:       BIG8002_end: 84:9684] 2018-02-14 23:06:36,033 > BIG8002_end-성공
+[INFO|    sp_bg800.py:          SP_bg800: 81:9684] 2018-02-14 23:06:36,033 > SP_bg800-성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 39:9684] 2018-02-14 23:06:36,033 > ===================AP [sp_bg800] main end 
+[ERROR|tcf_sp_bg001.py:      TCF_SP_bg001: 44:9684] 2018-02-14 23:06:36,033 > AP[sp_bg800] 함수호출실패
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 52:9684] 2018-02-14 23:06:36,033 > SUS:F[TCF_SP_bg001]함수 호출성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 54:9684] 2018-02-14 23:06:36,033 > =================== ETF() 함수호출 
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 55:9684] 2018-02-14 23:06:36,033 > ETF() start 
+[INFO|  etf_common.py:               ETF: 15:9684] 2018-02-14 23:06:36,033 > 트랜잭션을 완료시킨다.
+[INFO|     tpsutil.py:        tprollback:325:9684] 2018-02-14 23:06:36,049 > ▲tprollback()-성공:
+[INFO|  etf_common.py:               ETF: 21:9684] 2018-02-14 23:06:36,049 > 프로세스 종료시간을 설정한다
+[INFO|  etf_common.py:               ETF: 24:9684] 2018-02-14 23:06:36,049 > 인터벌은 1.870032
+[INFO|  etf_common.py:               ETF: 26:9684] 2018-02-14 23:06:36,049 > 로그를 저장합니다
+[INFO|  etf_common.py:       ETF_logging: 43:9684] 2018-02-14 23:06:36,049 > filename==C:\jDev\MyWorks\PycharmProjects\Roian\log\output\sp_bg800.log.20180214----{'com_info': {'svcname': 'sp_bg800', 'sysdate': '20180214', 'intime': '230634', 'outtime': '230634', 'hostprog': 'BIG8002', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg800.log.20180214', 'interval': '1.870032'}, 'dbconn': [<pymysql.connections.Connection object at 0x000000000475CF28>], 'pid': '00009684', 'ostype': 'Windows', 'err_info': {'count': 3, 'err1cod': 'EBIG005', 'err1msg': 'preAnalysis 분석에러Error tokenizing data. C error: Expected 2 fields in line 3, saw 4\n', 'err2cod': 'EBIG005', 'err2msg': "trainModel 수행 에러'bool' object has no attribute 'model_type'", 'err3cod': 'EBIG004', 'err3msg': 'SP_bg800 수행중 오류발생', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg800', 'BIG8002', <src.big.sp_bg800.transfer.big8001cdto.BIG8001CDTO object at 0x00000000021746A0>], 'indata': [<src.big.sp_bg800.transfer.big8001cdto.BIG8001CDTO object at 0x00000000021746A0>], 'outdata': []}
+[INFO|  etf_common.py:               ETF: 33:9684] 2018-02-14 23:06:36,049 > ETF 성공
+[INFO|tcf_sp_bg001.py:      TCF_SP_bg001: 57:9684] 2018-02-14 23:06:36,049 > ETF() end 
+[INFO|     include.py:       showCominfo: 87:9684] 2018-02-14 23:06:36,049 > #######################################################
+[INFO|     include.py:       showCominfo: 88:9684] 2018-02-14 23:06:36,049 > {'com_info': {'svcname': 'sp_bg800', 'sysdate': '20180214', 'intime': '230634', 'outtime': '230634', 'hostprog': 'BIG8002', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg800.log.20180214', 'interval': '1.870032'}, 'dbconn': [<pymysql.connections.Connection object at 0x000000000475CF28>], 'pid': '00009684', 'ostype': 'Windows', 'err_info': {'count': 3, 'err1cod': 'EBIG005', 'err1msg': 'preAnalysis 분석에러Error tokenizing data. C error: Expected 2 fields in line 3, saw 4\n', 'err2cod': 'EBIG005', 'err2msg': "trainModel 수행 에러'bool' object has no attribute 'model_type'", 'err3cod': 'EBIG004', 'err3msg': 'SP_bg800 수행중 오류발생', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg800', 'BIG8002', <src.big.sp_bg800.transfer.big8001cdto.BIG8001CDTO object at 0x00000000021746A0>], 'indata': [<src.big.sp_bg800.transfer.big8001cdto.BIG8001CDTO object at 0x00000000021746A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:9684] 2018-02-14 23:06:36,049 > #######################################################
+[INFO|   comdbutil.py:           dbclose: 93:9684] 2018-02-14 23:06:36,049 > db close
+[INFO|tcf_sp_bg001.py:              main:168:9684] 2018-02-14 23:06:36,049 > ============================================= TCF_SP_bg001() e
+[INFO|     include.py:       showCominfo: 87:9684] 2018-02-14 23:06:36,049 > #######################################################
+[INFO|     include.py:       showCominfo: 88:9684] 2018-02-14 23:06:36,049 > {'com_info': {'svcname': 'sp_bg800', 'sysdate': '20180214', 'intime': '230634', 'outtime': '230634', 'hostprog': 'BIG8002', 'logfile': 'C:\\jDev\\MyWorks\\PycharmProjects\\Roian\\log\\output\\sp_bg800.log.20180214', 'interval': '1.870032'}, 'dbconn': [<pymysql.connections.Connection object at 0x000000000475CF28>], 'pid': '00009684', 'ostype': 'Windows', 'err_info': {'count': 3, 'err1cod': 'EBIG005', 'err1msg': 'preAnalysis 분석에러Error tokenizing data. C error: Expected 2 fields in line 3, saw 4\n', 'err2cod': 'EBIG005', 'err2msg': "trainModel 수행 에러'bool' object has no attribute 'model_type'", 'err3cod': 'EBIG004', 'err3msg': 'SP_bg800 수행중 오류발생', 'err4cod': '', 'err4msg': '', 'err5cod': '', 'err5msg': '', 'err6cod': '', 'err6msg': '', 'err7cod': '', 'err7msg': '', 'finalcd': 'EBIG004'}, 'sysargv': ['tcf_sp_bg001.py', 'sp_bg800', 'BIG8002', <src.big.sp_bg800.transfer.big8001cdto.BIG8001CDTO object at 0x00000000021746A0>], 'indata': [<src.big.sp_bg800.transfer.big8001cdto.BIG8001CDTO object at 0x00000000021746A0>], 'outdata': []}
+[INFO|     include.py:       showCominfo: 89:9684] 2018-02-14 23:06:36,064 > #######################################################

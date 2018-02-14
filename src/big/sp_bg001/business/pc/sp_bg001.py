@@ -1,5 +1,5 @@
 from src.com.fwk.business.info import include
-from src.big.sp_bg001.business.pc.mod import big1000, big1001, big1002, big1003, big1004
+from src.big.sp_bg001.business.pc.mod import big1000, big1001, big1002, big1003, big1004, big1005
 from src.com.fwk.business.util.logging import comlogging
 
 
@@ -49,6 +49,8 @@ def SP_bg001():
             big1003.BIG1003()
         elif hostprog == 'BIG1004' :
             big1004.BIG1004()
+        elif hostprog == 'BIG1005' :
+            big1005.BIG1005()
         else :
             include.setErr('EBIG003', 'Host Proam을 설정하지 않았다')
             raise Exception('Host Program을 설정하지 않았습니다.')

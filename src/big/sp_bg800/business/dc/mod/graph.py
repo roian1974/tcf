@@ -9,6 +9,7 @@ def bar_chart(feature, train):
     df = pd.DataFrame([survived,dead])
     df.index = ['Survived','Dead']
     df.plot(kind='bar',stacked=True, figsize=(10,5))
+    plt.savefig('./feature-survived.png')
     plt.show()
 
 

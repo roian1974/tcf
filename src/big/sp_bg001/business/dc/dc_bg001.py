@@ -3,7 +3,7 @@ import urllib.request as req
 import gzip, os, os.path
 import struct
 import glob, os.path, re, json
-from src.big.sp_bg001.transfer import bg1000cdto, big1000cdto
+from src.big.sp_bg001.transfer import big1000cdto
 from src.big.sp_bg001.business.dc.mod import catchLANG_preprocessing
 import pandas as pd
 import matplotlib.pyplot as plt

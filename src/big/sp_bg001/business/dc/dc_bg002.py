@@ -16,6 +16,12 @@ from sklearn.model_selection import train_test_split
 from sklearn import svm, metrics
 import matplotlib.pyplot as plt
 import seaborn as sns
+from keras.datasets import mnist
+from keras.models import Sequential
+from keras.layers.core import Dense, Dropout, Activation
+from keras.optimizers import Adam
+from keras.utils import np_utils
+
 
 def preAnalysis(big1000cdto) :
 
@@ -102,85 +108,166 @@ def trainModel(big1000cdto) :
             return False
 
 
-def word2vecTest() :
+def kerasTest(cdto) :
 
-    fp = codecs.open('2BEXXX01.txt','r', encoding='utf-8')
-    soup = BeautifulSoup(fp, "html.parser")
-    body = soup.select_one("text body")
-    text = body.getText()
+    # MNIST 데이터 읽어 들이기 --- (※1)
+    (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
-    print(text)
-    twitter = Twitter()
-    lines = text.split("\r\n")
-    results = []
-    for line in lines :
-        r = []
-        malist = twitter.pos(line, norm=True, stem=True)
-        for( word, pumsa ) in malist :
-            if not pumsa in  ['Josa','Eomi',"Punctuation"] :
-                r.append(word)
-        results.append( (" ".join(r)).strip())
+    # 데이터를 float32 자료형으로 변환하고 정규화하기 --- (※2)
+    X_train = X_train.reshape(60000, 784).astype('float32')
+    X_test = X_test.reshape(10000, 784).astype('float')
+    X_train /= 255
+    X_test /= 255
+    # 레이블 데이터를 0-9까지의 카테고리를 나타내는 배열로 변환하기 --- (※2a)
+    y_train = np_utils.to_categorical(y_train, 10)
+    y_test = np_utils.to_categorical(y_test, 10)
 
-    output = ( " ".join(results)).strip()
-    print(output)
-    with open("togi.wakati","w",encoding="utf-8") as fp:
-        fp.write(output)
-
-    data = word2vec.LineSentence("togi.wakati")
-    model = word2vec.Word2Vec(data,size=200, window=10, hs=1, min_count=2, sg=1)
-    model.save("togi.model")
-
-
-def word2vecModelTest() :
-
-    model = word2vec.Word2Vec.load("togi.model")
-    model.most_similar(positive=['땅']) # 땅과 가장 유사한 단어
+    # 모델 구조 정의하기 --- (※3)
+    model = Sequential()
+    model.add(Dense(512, input_shape=(784,)))
+    model.add(Activation('relu'))
+    model.add(Dropout(0.2))
+    model.add(Dense(512))
+    model.add(Activation('relu'))
+    model.add(Dropout(0.2))
+    model.add(Dense(10))
+    model.add(Activation('softmax'))
+    # 모델 구축하기 --- (※4)
+    model.compile(
+        loss='categorical_crossentropy',
+        optimizer=Adam(),
+        metrics=['accuracy'])
 
 
-def 형태소분석() :
-    print("---")
-    twitter = Twitter()
-    print("---1")
-    print(twitter.morphs(u'단독입찰보다 복수입찰의 경우'))
-    print(twitter.nouns(u'유일하게 항공기 체계 종합개발 경험을 갖고 있는 KAI는'))
-    print(twitter.phrases(u'날카로운 분석과 신뢰감 있는 진행으로'))
-    print(twitter.pos(u'이것도 되나욬ㅋㅋ'))
-    print(twitter.pos(u'이것도 되나욬ㅋㅋ', norm=True))
-    print(twitter.pos(u'이것도 되나욬ㅋㅋ', norm=True, stem=True))
-
-def 워드디셔너리() :
-    string = '몇|번|을|쓰러지다|몇|번|을|무너지다|다시|일어나다'
-
-    # todo : 이 문자을 벡터로 어떻게 표현할까
-    # 먼저 워드디셔너리를 만든다.
-
-    # word_dictionary {
-    #     "몇" : 1
-    #     "번" : 2
-    #     "을" : 3
-    #     "쓰러지다" : 4
-    #     "무너지다" : 5
-    #     "다시" : 6
-    #     "일어나다" : 7
-    #  }
-    # 몇은 2번 반복, ,..
-    # data
-    # [2, 2, 2, 1, 1, 1]
-    #
-    # 이렇게 해서 벡터화 시킨다.
-    #
-    # 이런 벡터화 된 정보를 모델에 활용되는데
-    #
-    # 예를들어보면
-    #
-    # model.fit(X_train, Y_train)
-    # 이 모델의 fit 메소드의 파라미터로 사용된다는 것이다.
-    # 여기서
-    # X_train은 단어의 출현도를
-    # Y_train은 카테고리를 입력한다.
+    # 데이터 훈련하기 --- (※5)
+    hist = model.fit(X_train, y_train)
 
 
+    # 테스트 데이터로 평가하기 --- (※6)
+    score = model.evaluate(X_test, y_test, verbose=1)
+    print('loss=', score[0])
+    print('accuracy=', score[1])
+
+    cdto.outdata['loss'] = score[0]
+    cdto.outdata['accuracy'] = score[1]
+
+    return cdto
 
 
+def kerasBMI(cdto) :
+    """
+    TODO : 모듈을 읽어 들인다
+    TODO : 데이터를 가공한다.
+    TODO : 모델을 만든다
+    TODO : 학습을 시킨다
+    TODO : 예측을 한뒤 정답률을 구한다.
+    :param cdto:
+    :return: cdto
+    """
+
+    # TODO : 모듈을 읽어 들인다.
+    from keras.models import Sequential
+    from keras.layers.core import Dense, Dropout, Activation
+    from keras.callbacks import EarlyStopping
+    import pandas as pd, numpy as np
+
+    # TODO :
+    """
+    데이터는 
+    [
+        [<키>/200,<몸무게>/100], # 이값들은 0.0 ~ 1.0 사이어야 되므로 정규화를 해야된다. 정규화를 하는 방법은 키는 200으로 몸무게는 100으로 나눈다
+        [<키>/200,<몸무게>/100],
+        [<키>/200,<몸무게>/100]
+    ]
+    레이블은
+    [
+        'thin',  -> 변환 [ 1, 0, 0 ]
+        'normal',-> 변환 [ 0, 1, 0 ]
+        'fat'    -> 변환 [ 0, 0, 1 ]
+        ]
+    """
+    # BMI 데이터를 읽어 들이고 정규화하기 --- (※1)
+    csv = pd.read_csv("./keras/bmi.csv")
+
+    # 몸무게와 키 데이터를 가지고와서 정규화작업을 실시한다.
+    csv["weight"] /= 100
+    csv["height"] /= 200
+
+    # csv에서 weight, height을 가지고 와서 이것 matrix로 변환하는 작업을 실시한다.
+    X = csv[["weight", "height"]].as_matrix()  # --- (※1a)
+
+    # 레이블
+    bmi_class = {
+        "thin": [1, 0, 0],
+        "normal": [0, 1, 0],
+        "fat": [0, 0, 1]
+    }
+    # 여기서 x는 입력값으로 표시하고 이때는 레이블을 y로 나타낸다.
+    # 빈공간을 20000개 만들고 리스트가 3개 들어갈 수 있는 자리를 만든다.
+    y = np.empty((20000, 3))
+    """
+    이 의미는
+    [
+        [0,0,0],
+        [0,0,0],
+        ...
+        [0,0,0]
+    ] 이런 형태로 데이타가 20000개 생성된다.
+    """
+
+    # csv에 있는 레이블을 튜플형태로 추출한다.
+    for i, v in enumerate(csv["label"]):
+        y[i] = bmi_class[v]
+    print(y[0:3])
+    """
+    [[0. 0. 1.]
+    [0. 0. 1.]
+    [0. 1. 0.]]
+    이런 형태의 데이타가 나오고 이것을 레이블로 이용한다.
+    """
+
+    # 이제 만들어진 데이터를 가지고와서 학습전용데이터와 테스트전용 데이타를 만든다.
+    # 훈련 전용 데이터와 테스트 전용 데이터로 나누기 --- (※2)
+    # X는 1부터 15000번째까지
+    X_train, y_train = X[1:15001], y[1:15001]
+    X_test, y_test = X[15001:20001], y[15001:20001]
+
+    # 모델 구조 정의하기 --- (※3)
+    model = Sequential()
+    # 모델의 레이어를 만드는 작업을 한다.
+    model.add(Dense(512, input_shape=(2,)))
+    model.add(Activation('relu'))
+    model.add(Dropout(0.1))
+    model.add(Dense(512))
+    model.add(Activation('relu'))
+    model.add(Dropout(0.1))
+    model.add(Dense(3))
+    model.add(Activation('softmax'))
+
+    # 모델 구축하기 --- (※4)
+    model.compile(
+        loss='categorical_crossentropy',
+        optimizer="rmsprop",
+        metrics=['accuracy'])
+
+    # 데이터 훈련하기 --- (※5)
+    hist = model.fit(
+        X_train, y_train,
+        batch_size=100,
+        nb_epoch=20,
+        validation_split=0.1,
+        callbacks=[EarlyStopping(monitor='val_loss', patience=2)],
+        verbose=1)
+
+    # 테스트 데이터로 평가하기 --- (※6)
+    # score는 정답율을 의미한다.
+    score = model.evaluate(X_test, y_test)
+    print('loss=', score[0])
+    print('accuracy=', score[1])
+
+    cdto.outdata['loss'] = score[0]
+    cdto.outdata['accuracy'] = score[1]
+
+    return cdto
 
 
