@@ -368,7 +368,7 @@
           1. 현재 로컬리파지토리에 연결된 리모트 리파지토리 정보확인하기
                 git remote
           2. 리모트리파지토리 연결
-                git remote add origin https://github.com/roian1974/platform
+                git remote add origin https://github.com/roian1974/tcf
           3. 현재의 브렌치를 확인해 본다
                 git branch
           4. 현재의 파일을 서버리파지토리로 이동

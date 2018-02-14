@@ -1,8 +1,7 @@
 from src.com.fwk.business.tcf import tcf_sp_bg001
-from src.big.sp_bg001.transfer import bg1000cdto
+from src.big.sp_bg001.transfer.big1000cdto import BIG1000CDTO
 import pandas as pd
 
-indto = bg1000cdto
 
 # 훈련데이타 가공
 """
@@ -27,10 +26,18 @@ csv = pd.read_csv('./flower/iris2.csv')
 train = csv[ ["SepalLength","SepalWidth","PetalLength","PetalWidth"] ]
 label = csv["Name"]
 
-indto.indata = train
-indto.labels = label
-indto.examples = [ [5.1, 3.0, 1.3, 0.2] ]
-indto.domain_function = "flowerPredit"
+cdto = BIG1000CDTO
 
-argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1000', indto ]
-tcf_sp_bg001.main(argv)
+cdto.indata['indata'] = train
+cdto.indata['labels'] = label
+cdto.indata['examples'] = [ [5.1, 3.0, 1.3, 0.2] ]
+cdto.indata['examples_labels'] = []
+cdto.indata['domain_function'] = "flowerPredit"
+
+argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1001', cdto ]
+s_out = tcf_sp_bg001.main(argv)
+
+cdto = s_out['outdata'][0]
+print('정확도:',cdto.outdata['accuracy'])
+print('결과:',cdto.outdata['results'])
+

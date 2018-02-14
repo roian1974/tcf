@@ -46,6 +46,8 @@ def search_full_path(dir_name):
     :return:
     """
     tmp_list = [g for g in glob.glob(dir_name + "/*.json")]
+    print('---3333--', dir_name, tmp_list)
+
     return sorted(tmp_list, reverse=False)
 
 

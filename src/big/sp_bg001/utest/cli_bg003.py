@@ -1,9 +1,9 @@
 from src.com.fwk.business.tcf import tcf_sp_bg001
-from src.big.sp_bg001.transfer import bg1000cdto
+from src.big.sp_bg001.transfer.big1000cdto import BIG1000CDTO
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-indto = bg1000cdto
+cdto = BIG1000CDTO
 
 # 훈련데이타 가공
 """
@@ -29,11 +29,14 @@ data = csv[ ["SepalLength","SepalWidth","PetalLength","PetalWidth"] ]
 label = csv["Name"]
 
 train_data, test_data , train_label, test_label = train_test_split(data, label)
-indto.train_data = train_data
-indto.train_label = train_label
-indto.test_data = test_data
-indto.test_label = test_label
-indto.domain_function = "flowerPredit2"
+cdto.indata['train_data'] = train_data
+cdto.indata['train_label'] = train_label
+cdto.indata['test_data'] = test_data
+cdto.indata['test_label'] = test_label
 
-argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1000', indto ]
-tcf_sp_bg001.main(argv)
+argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1002', cdto ]
+s_out = tcf_sp_bg001.main(argv)
+
+cdto = s_out['outdata'][0]
+print('결과:',cdto.outdata['results'])
+print('정확도:',cdto.outdata['accuracy'])

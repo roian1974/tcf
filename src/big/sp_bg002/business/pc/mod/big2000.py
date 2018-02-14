@@ -16,18 +16,16 @@ def BIG2000():
         # ------------------------------------------------------------------------------------------------------------
         # 전처리된 입력파일에 대한 로딩작업을 진행한다.
         # ------------------------------------------------------------------------------------------------------------
-        filename,modelType, baseDate, ftype = BIG2000_start()
+        cdto = BIG2000_start()
 
         if include.isError() == False:
-
             comlogging.logger.info( "BIG2000_processing() start ")
-
             #--------------------------------------------------------------------------------------------------------
             # 훈련데이타 와 데이타 데이터를 준비하는 과정을 거친다.
             #   > 데이타를 소문자로 치환하는 작업을 처리한다.
             #   > 문장을 읽어서 단어별로 리스트를 작성하고 단어별 빈도수를 작업한다.
             # --------------------------------------------------------------------------------------------------------
-            tdata = BIG2000_processing(filename, modelType, baseDate, ftype)
+            cdto = BIG2000_processing(cdto)
 
         else :
             raise Exception('BIG2000_start 함수에서 에러가 발생')
@@ -42,7 +40,7 @@ def BIG2000():
         #------------------------------------------------------------------------------------------------------------
         # 훈련데이타를 파일로 저장한다
         # ------------------------------------------------------------------------------------------------------------
-        BIG2000_end(tdata)
+        BIG2000_end(cdto)
 
         if include.isError() == False :
             return True
@@ -55,11 +53,7 @@ def BIG2000():
 def BIG2000_start() :
     try:
 
-        cdto = include.gcominfo['sysargv'][3]
-        infile = cdto.indata['filename']
-        modelType = cdto.indata['model']
-        baseDate = cdto.indata['basedate']
-        ftype = cdto.indata['ftype']
+        big2000cdto = include.gcominfo['sysargv'][3]
 
     except Exception as err:
         comlogging.logger.error( 'BIG2000_start-' + str(err))
@@ -68,19 +62,33 @@ def BIG2000_start() :
         comlogging.logger.info( 'BIG2000_start-성공')
     finally:
         if include.isError() == False :
-            return infile, modelType, baseDate, ftype
+            return big2000cdto
         else :
             return False
 
-def BIG2000_processing(infile,modelType,baseDate,ftype) :
+def BIG2000_processing(big2000cdto) :
     try:
+
+        infile = big2000cdto.indata['filename']
+        modelType = big2000cdto.indata['model']
+        baseDate = big2000cdto.indata['basedate']
+        ftype = big2000cdto.indata['ftype']
+        d_type = big2000cdto.indata['d_type']
+
         comlogging.logger.info("#################################################################" + str(getIntTime()))
 
         comlogging.logger.info('• 1. 훈련데이타와 테스트 데이터를 준비한다.')
-        train, headlines = dc_bg002.preAnalysis(infile,baseDate,"<",ftype) # < 20150101
-        if headlines  != True :
+        big2000cdto = dc_bg002.preAnalysis(big2000cdto)
+        if big2000cdto  != True :
             comlogging.logger.info('• 2. 모델 훈련과 모델을 생성한다.')
-            dc_bg002.trainModel(modelType, train, headlines)
+            train = big2000cdto.ddto['train']
+            headlines = big2000cdto.ddto['headlines']
+            if d_type == "train" :
+                dc_bg002.trainModel(modelType, train, headlines)
+            elif d_type == "test":
+                out = dc_bg002.testModel(modelType, train, headlines)
+                big2000cdto.outdata['out'] = out
+
 
         comlogging.logger.info("#################################################################" + str(getIntTime()))
     except Exception as err:
@@ -90,20 +98,16 @@ def BIG2000_processing(infile,modelType,baseDate,ftype) :
         comlogging.logger.info( 'BIG2000_processing-성공')
     finally:
         if include.isError() == False :
-            return True
+            return big2000cdto
         else :
             return False
 
-def BIG2000_end(tdata) :
+def BIG2000_end(cdto) :
     try:
         #------------------------------------------------------------------------------------------------------------
-        # 훈련데이타를 파일로 저장한다
+        # 클라이언트로 전송할 내용을 저장한다.
         # ------------------------------------------------------------------------------------------------------------
-        outfile = include.gcominfo['sysargv'][4]
-        outfile = 'C:\jDev\MyWorks\PycharmProjects\Roian\log\input\plt\Combined_News_DJIA.csv'
-        outfile = outfile + ".out"
-        comutil.file_append( outfile, str(tdata) )
-
+        include.gcominfo['outdata'].append(cdto)
 
     except Exception as err:
         comlogging.logger.error( 'BIG2000_end '+ str(err))

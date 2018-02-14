@@ -1,4 +1,3 @@
-from src.big.sp_bg001.transfer import bg1000cdto
 from sklearn import svm, metrics
 import urllib.request as req
 import gzip, os, os.path
@@ -6,12 +5,12 @@ import struct
 import glob, os.path, re, json
 
 
-def preprocessing(bg1000cdto) :
+def preprocessing(big1000cdto) :
 
-    path = bg1000cdto.train_file_path
+    path = big1000cdto.indata['train_file_path']
     train_data, train_label = loadfiles(path)
 
-    path = bg1000cdto.test_file_path
+    path = big1000cdto.test_file_path
     test_data, test_label = loadfiles(path)
 
     return train_data, train_label, test_data, test_label

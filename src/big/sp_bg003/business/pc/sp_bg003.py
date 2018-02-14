@@ -9,7 +9,7 @@ from src.com.fwk.business.util.logging import comlogging
 
 def SJF_SP_bg003():
     try:
-        comlogging.logger.info('SJF_SP_bg003 xxxxxxxx')
+        comlogging.logger.info('SJF_SP_bg003 call')
         pass
     except Exception as err:
         comlogging.logger.error( 'SJF_SP_bg003-'+ str(err))

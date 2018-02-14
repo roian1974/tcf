@@ -1,26 +1,29 @@
 from src.com.fwk.business.tcf import tcf_sp_bg001
-from src.big.sp_bg001.transfer import bg1000cdto
+from src.big.sp_bg001.transfer.big1000cdto import BIG1000CDTO
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
-indto = bg1000cdto
+cdto = BIG1000CDTO
 
 # 손글씨 다운로드
-# indto.domain_function = "miniDownload"
-# argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1000', indto ]
+#-----------------------------------------------------------------------------------------------------------------------
+# cdto.indata['domain_function'] = "handdataDownload"
+# argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', cdto ]
 # tcf_sp_bg001.main(argv)
 
-# # 다운로드한 파일을 csv 파일로 저장
-# indto = bg1000cdto
-# indto.domain_function = "toCSV"
-# indto.maxdata = 1000
-# indto.file_name = "train"
-# argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1000', indto ]
+# 다운로드한 파일을 csv 파일로 저장
+#-----------------------------------------------------------------------------------------------------------------------
+# cdto.indata['domain_function'] = "toCSV"
+# cdto.ddto['maxdata'] = 1000
+# cdto.ddto['file_name'] = "train"
+# argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', cdto ]
 # tcf_sp_bg001.main(argv)
-# indto.maxdata = 500
-# indto.file_name = "t10k"
-# argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1000', indto ]
+#
+# cdto.indata['domain_function'] = "toCSV"
+# cdto.ddto['maxdata'] = 500
+# cdto.ddto['file_name'] = "t10k"
+# argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', cdto ]
 # tcf_sp_bg001.main(argv)
 
 
@@ -32,21 +35,13 @@ indto = bg1000cdto
 #     if i % 28 == 0:
 #         print()
 
-# 훈련데이타
-train_csv = pd.read_csv('./mnist/train.csv', header=None)
-tk_csv = pd.read_csv('./mnist/t10k.csv', header=None)
 
-# 그런데 데이타는 0과 1사이에서 정하므로
-def toDigit(l):
-    output = []
-    for i in l:
-        output.append(float(i)/256)
-    return output
+# 데이타 훈련
+cdto.indata['domain_function'] = "handTypeModel"
+cdto.indata['train_file'] = './mnist/train.csv'
+cdto.indata['tk_file'] = './mnist/t10k.csv'
+argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1003', cdto ]
+s_out = tcf_sp_bg001.main(argv)
 
-indto.train_data = list( map(toDigit, train_csv.iloc[:,1:].values) )
-indto.train_label = train_csv[0].values
-indto.test_data = list( map(toDigit, tk_csv.iloc[:,1:].values) )
-indto.test_label = tk_csv[0].values
-indto.domain_function = "handTypeModel"
-argv=['tcf_sp_bg001.py', 'sp_bg001', 'BIG1000', indto ]
-tcf_sp_bg001.main(argv)
+cdto = s_out['outdata'][0]
+print('정확도:',cdto.outdata['accuracy'])

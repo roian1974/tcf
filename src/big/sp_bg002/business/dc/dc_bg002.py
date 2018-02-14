@@ -12,9 +12,16 @@ from src.big.sp_bg002.business.dc.mod import logisticregression, naviebayes, ran
 #       =============================================================
 #       20180101    0   A 'hindrance to operations': extracts from the leaked reports .....
 #-----------------------------------------------------------------------------------------------------------------------
-def preAnalysis(filename,baseDate,my,ftype) :
+def preAnalysis(big2000cdto) :
     try:
         rtn = True
+
+        filename = big2000cdto.indata['filename']
+        modelType = big2000cdto.indata['model']
+        baseDate = big2000cdto.indata['basedate']
+        ftype = big2000cdto.indata['ftype']
+        d_type = big2000cdto.indata['d_type']
+
 
         # CSV 파일을 읽는다.
         comlogging.logger.info('• 1. Saving CSV File.')
@@ -27,23 +34,29 @@ def preAnalysis(filename,baseDate,my,ftype) :
         # 테스트 데이타와 훈련데이타를 나누어 준다
         # train = data[data['Date'] < '20150101']
         # test = data[data['Date'] > '20141231']
-        if my == "<" :
+        if d_type == "train" :
             print("<",baseDate)
             train = data[data['Date'] < baseDate ]
-        elif my == ">" :
+        elif d_type == "test" :
             print(">", baseDate)
             train = data[data['Date'] > baseDate]
 
         # 쓸데없는 문자를 없앤다
         # * @ # $ % ^ & * ( ) _- + 등의 문자를 삭제한다.  문자는 A-Z a-z까지만 허용한다.
         comlogging.logger.info('• 2. Removing punctuations.')
-        slicedData = train.iloc[:, 2:27] # tail.iloc[ 행, 열]
-        slicedData.replace(to_replace="[^a-zA-Z]", value=" ", regex=True, inplace=True)
-
+        if ftype == 'EN':
+            slicedData = train.iloc[:, 2:27] # tail.iloc[ 행, 열]
+            slicedData.replace(to_replace="[^a-zA-Z]", value=" ", regex=True, inplace=True)
+        elif ftype == 'KO' :
+            slicedData = train.iloc[:, 2:3]  # tail.iloc[ 행, 열]
 
         comlogging.logger.info('• 3. Renaming column names for ease of access')
-        list1 = [i for i in range(25)]  # 25 개의 리스트를 생성한다.
-        new_Index = [str(i) for i in list1]
+        if ftype == 'EN':
+            list1 = [i for i in range(25)]  # 25 개의 리스트를 생성한다.
+            new_Index = [str(i) for i in list1]
+        elif ftype == 'KO':
+            list1 = [i for i in range(1)]  # 25 개의 리스트를 생성한다.
+            new_Index = [str(i) for i in list1]
 
         # slicedData.columns - sliceData[:,2:27] 이므로 2컬럼부터 26컬럼까지의 정보이다.
         slicedData.columns = new_Index
@@ -64,6 +77,9 @@ def preAnalysis(filename,baseDate,my,ftype) :
         #     cnt+=1
         #     print(cnt,rd)
 
+        big2000cdto.ddto['train'] = train
+        big2000cdto.ddto['headlines'] = headlines
+
     except Exception as err:
         comlogging.logger.error('▲preAnalysis()-ERR:'+ str(err))
         include.setErr('EBIG005', 'preAnalysis 분석에러' + str(err))
@@ -72,7 +88,7 @@ def preAnalysis(filename,baseDate,my,ftype) :
         comlogging.logger.info('▲preAnalysis()-성공:')
     finally:
         if rtn == True :
-            return train, headlines
+            return big2000cdto
         else :
             return False
 
@@ -109,27 +125,27 @@ def testModel(modelType, train, headlines) :
     try:
         rtn = True
         if modelType == "LogisR" :
-            logisticregression.test(modelType, train, headlines)
+            out = logisticregression.test(modelType, train, headlines)
         elif modelType == "NaiveEyes" :
-            naviebayes.test(modelType, train, headlines)
+            out = naviebayes.test(modelType, train, headlines)
         elif modelType == "RF":
-            randomforest.test(modelType, train, headlines)
+            out = randomforest.test(modelType, train, headlines)
         elif modelType == "SVMGusian":
-            svmgausian.test(modelType, train, headlines)
+            out = svmgausian.test(modelType, train, headlines)
         elif modelType == "SVMLinear":
-            svmlinear.test(modelType, train, headlines)
+            out = svmlinear.test(modelType, train, headlines)
         else :
             pass
 
     except Exception as err:
-        comlogging.logger.error('▲exeModel()-ERR:'+ str(err))
-        include.setErr('EBIG005', 'exeModel 수행 에러' + str(err))
+        comlogging.logger.error('▲testModel()-ERR:'+ str(err))
+        include.setErr('EBIG005', 'testModel 수행 에러' + str(err))
         rtn = False
     else:
-        comlogging.logger.info('▲exeModel()-성공:')
+        comlogging.logger.info('▲testModel()-성공:')
     finally:
         if rtn == True :
-            return True
+            return out
         else :
             return False
 
